@@ -1,20 +1,18 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Parallax City
 
----
+This project demonstrates a dynamic background that changes based on scroll positon, creating a parallax effect on a city background.
 
-# svelte app
+#### [Demo](https://parallax-city.now.sh)
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+## WordPress installation instructions
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+1. Download repository as ZIP file
+2. Open your wordpress admin dashboard available at https://www.yoursite.com/wp-admin
+3. Navigate to Plugins
+4. Click the "Upload plugin" button at the top header
+5. Browse for the ZIP file you downloaded earlier
+6. In your page builder framework of choice, or in the buildin WP editor, set your target element's CSS ID to `parallax-city`. This is the selector svelte will use to render the root component. Make sure to clear any styles on the element and that it's full width for the best effect.
+7. Enable the plugin and enjoy! 🏙️🌟
 
 ## Get started
 
@@ -35,7 +33,6 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
-
 ## Building and running in production mode
 
 To create an optimised version of the app:
@@ -46,17 +43,15 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-
 ## Single-page app mode
 
 By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
 
 ```js
 "start": "sirv public --single"
 ```
-
 
 ## Deploying to the web
 
@@ -91,4 +86,3 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
-# palm.github.io
