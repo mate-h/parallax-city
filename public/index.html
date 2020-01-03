@@ -11,5 +11,40 @@
     <script defer src="/build/bundle.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <style>
+      body {
+        font-family: system-ui;
+        padding: 0;
+        margin: 0;
+      }
+      .top {
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.76);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom {
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.87);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #212121;
+        z-index: 2;
+        position: relative;
+        transform: translate(0, -10px);
+      }
+    </style>
+    <div class="top">
+      Scroll down!
+    </div>
+    <div id="parallax-city"></div>
+    <div class="bottom">
+      Isn't it cool?
+    </div>
+  </body>
 </html>

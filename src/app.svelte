@@ -1,47 +1,37 @@
 <script>
+	import { onMount } from 'svelte';
 	import Layer from './components/layer.svelte';
 	const layers = [2, 1, 0];
+	let offsetTop = 0;
 	let y = 0;
 	let h = 1;
+	let wh = 1;
+	let container;
+	$: {
+		if (container) {
+			offsetTop = container.offsetTop;
+			if (offsetTop === 1) offsetTop = container.offsetParent.offsetTop;
+		}
+	}
+
+	onMount(() => {
+		offsetTop = container.offsetTop;
+		if (offsetTop === 1) offsetTop = container.offsetParent.offsetTop;
+	});
 </script>
 
 <style>
-	.foreground {
-		width: 100%;
-		transform: translate(0, -12px);
-		height: calc(100% - 150px);
-		background-color: #212121;
-		color: white;
-		padding: 100vh 0 0 0;
-	}
-	.foreground::after {
-		display: block;
-		background-color: #212121;
-		height: 12px;
-		content: "";
-		transform: translate(0, 12px);
-	}
-	.main {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: -1000;
+	#background {
+		overflow: visible;
 	}
 </style>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window bind:scrollY={y} bind:innerHeight={wh}/>
 
-<div class="main">
-	<div bind:clientHeight={h}>
-		<svg  id="background" viewBox="0 0 4409.92 2479.24">
-			{#each layers as layer}
-				<Layer t={y / h} depth={layer} style="transform: translate(0,{(y / h) * layer * 500}px); opacity: "/>
-			{/each}
-		</svg>
-	</div>
-	
-	<div class="foreground"/>
+<div bind:clientHeight={h} bind:this={container}>
+	<svg id="background" viewBox="0 0 4409.92 2479.24">
+		{#each layers as layer}
+			<Layer t={(y - offsetTop + wh - h) / wh} depth={layer} style="transform: translate(0,{((y - offsetTop + wh - h) / wh) * layer * 500}px);"/>
+		{/each}
+	</svg>
 </div>
-
-

@@ -1,2 +1,2495 @@
-var app=function(){"use strict";function t(){}function e(t){return t()}function s(){return Object.create(null)}function l(t){t.forEach(e)}function i(t){return"function"==typeof t}function n(t,e){return t!=t?e==e:t!==e||t&&"object"==typeof t||"function"==typeof t}function v(t){return null==t?"":t}function c(t,e){t.appendChild(e)}function h(t,e,s){t.insertBefore(e,s||null)}function a(t){t.parentNode.removeChild(t)}function r(t){return document.createElement(t)}function d(t){return document.createElementNS("http://www.w3.org/2000/svg",t)}function o(){return t=" ",document.createTextNode(t);var t}function _(t,e,s){null==s?t.removeAttribute(e):t.getAttribute(e)!==s&&t.setAttribute(e,s)}let y;function x(t){y=t}const m=[],u=[],f=[],M=[],L=Promise.resolve();let D=!1;function I(t){f.push(t)}function X(){const t=new Set;do{for(;m.length;){const t=m.shift();x(t),p(t.$$)}for(;u.length;)u.pop()();for(let e=0;e<f.length;e+=1){const s=f[e];t.has(s)||(s(),t.add(s))}f.length=0}while(m.length);for(;M.length;)M.pop()();D=!1}function p(t){if(null!==t.fragment){t.update(),l(t.before_update);const e=t.dirty;t.dirty=[-1],t.fragment&&t.fragment.p(t.ctx,e),t.after_update.forEach(I)}}const g=new Set;let $;function w(){$={r:0,c:[],p:$}}function b(){$.r||l($.c),$=$.p}function V(t,e){t&&t.i&&(g.delete(t),t.i(e))}function C(t,e,s,l){if(t&&t.o){if(g.has(t))return;g.add(t),$.c.push(()=>{g.delete(t),l&&(s&&t.d(1),l())}),t.o(e)}}function E(t){t&&t.c()}function z(t,s,n){const{fragment:v,on_mount:c,on_destroy:h,after_update:a}=t.$$;v&&v.m(s,n),I(()=>{const s=c.map(e).filter(i);h?h.push(...s):l(s),t.$$.on_mount=[]}),a.forEach(I)}function k(t,e){const s=t.$$;null!==s.fragment&&(l(s.on_destroy),s.fragment&&s.fragment.d(e),s.on_destroy=s.fragment=null,s.ctx=[])}function A(t,e){-1===t.$$.dirty[0]&&(m.push(t),D||(D=!0,L.then(X)),t.$$.dirty.fill(0)),t.$$.dirty[e/31|0]|=1<<e%31}function T(e,i,n,v,c,h,a=[-1]){const r=y;x(e);const d=i.props||{},o=e.$$={fragment:null,ctx:null,props:h,update:t,not_equal:c,bound:s(),on_mount:[],on_destroy:[],before_update:[],after_update:[],context:new Map(r?r.$$.context:[]),callbacks:s(),dirty:a};let _=!1;o.ctx=n?n(e,d,(t,s,l=s)=>(o.ctx&&c(o.ctx[t],o.ctx[t]=l)&&(o.bound[t]&&o.bound[t](l),_&&A(e,t)),s)):[],o.update(),_=!0,l(o.before_update),o.fragment=!!v&&v(o.ctx),i.target&&(i.hydrate?o.fragment&&o.fragment.l(function(t){return Array.from(t.childNodes)}(i.target)):o.fragment&&o.fragment.c(),i.intro&&V(e.$$.fragment),z(e,i.target,i.anchor),X()),x(r)}class j{$destroy(){k(this,1),this.$destroy=t}$on(t,e){const s=this.$$.callbacks[t]||(this.$$.callbacks[t]=[]);return s.push(e),()=>{const t=s.indexOf(e);-1!==t&&s.splice(t,1)}}$set(){}}function N(e){let s,l,i,n,v,r,y,x,m,u,f,M,L,D,I,X,p,g,$,w,b,V,C,E,z,k,A,T,j,N,O,S,q,B,H,P,Y,F,G,J,K,Q,R,U,W,Z,tt,et,st,lt,it,nt,vt,ct,ht,at,rt,dt,ot,_t,yt,xt,mt,ut,ft,Mt,Lt,Dt,It,Xt,pt,gt,$t,wt,bt,Vt,Ct,Et,zt,kt,At,Tt,jt,Nt,Ot,St,qt,Bt,Ht,Pt,Yt,Ft,Gt,Jt,Kt,Qt,Rt,Ut,Wt,Zt,te,ee,se,le,ie,ne,ve,ce,he,ae,re,de,oe,_e,ye,xe,me,ue,fe,Me,Le,De,Ie,Xe,pe,ge,$e,we,be,Ve,Ce,Ee,ze,ke,Ae,Te,je,Ne,Oe,Se,qe,Be,He,Pe,Ye,Fe,Ge,Je,Ke,Qe,Re,Ue,We,Ze,ts,es,ss,ls,is,ns,vs,cs,hs,as,rs,ds,os,_s,ys,xs,ms,us,fs,Ms,Ls,Ds,Is,Xs,ps,gs,$s,ws,bs,Vs,Cs,Es,zs,ks,As,Ts,js,Ns,Os,Ss,qs,Bs,Hs,Ps,Ys,Fs;return{c(){s=d("rect"),l=o(),i=d("rect"),n=o(),v=d("rect"),r=o(),y=d("path"),x=o(),m=d("polyline"),u=o(),f=d("rect"),M=o(),L=d("rect"),D=o(),I=d("rect"),X=o(),p=d("rect"),g=o(),$=d("rect"),w=o(),b=d("rect"),C=o(),E=d("line"),z=o(),k=d("line"),A=o(),T=d("line"),j=o(),N=d("line"),O=o(),S=d("line"),q=o(),B=d("line"),H=o(),P=d("line"),Y=o(),F=d("line"),G=o(),J=d("line"),K=o(),Q=d("polygon"),R=o(),U=d("line"),W=o(),Z=d("line"),tt=o(),et=d("line"),st=o(),lt=d("line"),it=o(),nt=d("line"),vt=o(),ct=d("line"),ht=o(),at=d("line"),rt=o(),dt=d("line"),ot=o(),_t=d("line"),yt=o(),xt=d("line"),mt=o(),ut=d("line"),ft=o(),Mt=d("line"),Lt=o(),Dt=d("line"),It=o(),Xt=d("line"),pt=o(),gt=d("line"),$t=o(),wt=d("path"),bt=o(),Vt=d("line"),Et=o(),zt=d("line"),At=o(),Tt=d("path"),Nt=o(),Ot=d("line"),St=o(),qt=d("line"),Bt=o(),Ht=d("line"),Pt=o(),Yt=d("line"),Ft=o(),Gt=d("line"),Jt=o(),Kt=d("line"),Qt=o(),Rt=d("line"),Ut=o(),Wt=d("line"),Zt=o(),te=d("line"),ee=o(),se=d("line"),le=o(),ie=d("line"),ne=o(),ve=d("line"),ce=o(),he=d("line"),ae=o(),re=d("line"),de=o(),oe=d("line"),_e=o(),ye=d("line"),xe=o(),me=d("line"),ue=o(),fe=d("line"),Me=o(),Le=d("line"),De=o(),Ie=d("line"),Xe=o(),pe=d("line"),ge=o(),$e=d("line"),we=o(),be=d("line"),Ve=o(),Ce=d("line"),Ee=o(),ze=d("line"),ke=o(),Ae=d("line"),Te=o(),je=d("line"),Ne=o(),Oe=d("line"),Se=o(),qe=d("line"),Be=o(),He=d("line"),Pe=o(),Ye=d("line"),Fe=o(),Ge=d("line"),Je=o(),Ke=d("line"),Qe=o(),Re=d("line"),Ue=o(),We=d("line"),Ze=o(),ts=d("line"),es=o(),ss=d("line"),ls=o(),is=d("line"),ns=o(),vs=d("line"),cs=o(),hs=d("line"),as=o(),rs=d("line"),ds=o(),os=d("line"),_s=o(),ys=d("line"),xs=o(),ms=d("line"),us=o(),fs=d("line"),Ms=o(),Ls=d("line"),Ds=o(),Is=d("line"),Xs=o(),ps=d("line"),gs=o(),$s=d("line"),ws=o(),bs=d("line"),Vs=o(),Cs=d("g"),Es=d("path"),zs=d("path"),ks=d("path"),As=d("path"),Ts=d("rect"),js=d("rect"),Ns=d("path"),Os=d("circle"),qs=o(),Bs=d("path"),Hs=o(),Ps=d("path"),Ys=o(),Fs=d("rect"),_(s,"id","XMLID_5_"),_(s,"x","1218.94"),_(s,"y","2272.38"),_(s,"transform","matrix(-1 -4.491664e-11 4.491664e-11 -1 2613.8027 4689.6328)"),_(s,"class","st4 svelte-1mi792v"),_(s,"width","175.92"),_(s,"height","144.88"),_(i,"id","XMLID_6_"),_(i,"x","1272.41"),_(i,"y","1524.8"),_(i,"transform","matrix(-1 -4.499924e-11 4.499924e-11 -1 2617.2522 3797.1814)"),_(i,"class","st5 svelte-1mi792v"),_(i,"width","72.44"),_(i,"height","747.58"),_(v,"id","XMLID_9_"),_(v,"x","1275.42"),_(v,"y","1465.7"),_(v,"transform","matrix(-1 -4.518842e-11 4.518842e-11 -1 2617.2522 2990.5002)"),_(v,"class","st4 svelte-1mi792v"),_(v,"width","66.42"),_(v,"height","59.11"),_(y,"id","XMLID_12_"),_(y,"class","st4 svelte-1mi792v"),_(y,"d","M1275.42,1469.1l0.12-72.1h78.66c-0.03,0.17-0.06,0.35-0.09,0.52\n\t\tc-4.09,23.86-8.18,47.72-12.27,71.58"),_(m,"id","XMLID_14_"),_(m,"class","st5 svelte-1mi792v"),_(m,"points","1335.8,1393.68 1316.07,1134 1300.84,1134 1281.11,1395.43 \t"),_(f,"id","XMLID_10_"),_(f,"x","1301.17"),_(f,"y","1112.42"),_(f,"transform","matrix(-1 -1.120874e-10 1.120874e-10 -1 2617.2351 2246.4202)"),_(f,"class","st4 svelte-1mi792v"),_(f,"width","14.9"),_(f,"height","21.58"),_(L,"id","XMLID_11_"),_(L,"x","1258.82"),_(L,"y","1328.39"),_(L,"transform","matrix(-1 -4.490953e-11 4.490953e-11 -1 2614.929 2684.896)"),_(L,"class","st4 svelte-1mi792v"),_(L,"width","97.29"),_(L,"height","28.12"),_(I,"id","XMLID_13_"),_(I,"x","885.86"),_(I,"y","1296.59"),_(I,"transform","matrix(-1 -4.491397e-11 4.491397e-11 -1 2144.6775 2653.1025)"),_(I,"class","st5 svelte-1mi792v"),_(I,"width","372.96"),_(I,"height","59.92"),_(p,"id","XMLID_15_"),_(p,"x","997.14"),_(p,"y","1356.51"),_(p,"transform","matrix(-1 -4.481183e-11 4.481183e-11 -1 2052.9656 2796.1731)"),_(p,"class","st4 svelte-1mi792v"),_(p,"width","58.7"),_(p,"height","83.15"),_($,"id","XMLID_16_"),_($,"x","1916.7"),_($,"y","1349.17"),_($,"transform","matrix(-1 -4.483848e-11 4.483848e-11 -1 3876.1985 2725.2493)"),_($,"class","st4 svelte-1mi792v"),_($,"width","42.8"),_($,"height","26.9"),_(b,"id","XMLID_17_"),_(b,"x","1916.7"),_(b,"y","1532.6"),_(b,"transform",V=`matrix(-1 -4.488111e-11 4.488111e-11 -1 3876.1985 3118.999) translate(0, ${760*-e[0]})`),_(b,"class","st4 svelte-1mi792v"),_(b,"width","42.8"),_(b,"height","53.8"),_(E,"id","XMLID_18_"),_(E,"class","st5 svelte-1mi792v"),_(E,"x1","1301.17"),_(E,"y1","1121.11"),_(E,"x2","958"),_(E,"y2","1356.51"),_(k,"id","XMLID_19_"),_(k,"class","st5 svelte-1mi792v"),_(k,"x1","1316.07"),_(k,"y1","1121.11"),_(k,"x2","1743.06"),_(k,"y2","1312.49"),_(T,"id","XMLID_24_"),_(T,"class","st5 svelte-1mi792v"),_(T,"x1","1994.05"),_(T,"y1","1361.53"),_(T,"x2","1951.54"),_(T,"y2","1316.25"),_(N,"id","XMLID_25_"),_(N,"class","st5 svelte-1mi792v"),_(N,"x1","1951.54"),_(N,"y1","1316.25"),_(N,"x2","1923.47"),_(N,"y2","1356.51"),_(S,"id","XMLID_26_"),_(S,"class","st5 svelte-1mi792v"),_(S,"x1","1923.47"),_(S,"y1","1356.51"),_(S,"x2","1883.37"),_(S,"y2","1316.25"),_(B,"id","XMLID_27_"),_(B,"class","st5 svelte-1mi792v"),_(B,"x1","1883.37"),_(B,"y1","1316.25"),_(B,"x2","1861.72"),_(B,"y2","1355.9"),_(P,"id","XMLID_28_"),_(P,"class","st5 svelte-1mi792v"),_(P,"x1","1861.72"),_(P,"y1","1355.9"),_(P,"x2","1829.66"),_(P,"y2","1313.56"),_(F,"id","XMLID_29_"),_(F,"class","st5 svelte-1mi792v"),_(F,"x1","1829.66"),_(F,"y1","1313.56"),_(F,"x2","1804.78"),_(F,"y2","1355.9"),_(J,"id","XMLID_30_"),_(J,"class","st5 svelte-1mi792v"),_(J,"x1","1804.78"),_(J,"y1","1355.9"),_(J,"x2","1773.51"),_(J,"y2","1312.76"),_(Q,"id","XMLID_22_"),_(Q,"class","st5 svelte-1mi792v"),_(Q,"points","1363.98,1349.17 2049.99,1362.62 2022.92,1316.25 1398.18,1307.43 \t"),_(U,"id","XMLID_23_"),_(U,"class","st5 svelte-1mi792v"),_(U,"x1","2022.92"),_(U,"y1","1316.25"),_(U,"x2","1994.05"),_(U,"y2","1361.53"),_(Z,"id","XMLID_20_"),_(Z,"class","st5 svelte-1mi792v"),_(Z,"x1","1773.51"),_(Z,"y1","1312.76"),_(Z,"x2","1747.43"),_(Z,"y2","1355.9"),_(et,"id","XMLID_21_"),_(et,"class","st5 svelte-1mi792v"),_(et,"x1","1747.43"),_(et,"y1","1355.9"),_(et,"x2","1720.91"),_(et,"y2","1312.76"),_(lt,"id","XMLID_31_"),_(lt,"class","st5 svelte-1mi792v"),_(lt,"x1","1720.91"),_(lt,"y1","1312.76"),_(lt,"x2","1692.68"),_(lt,"y2","1353.76"),_(nt,"id","XMLID_32_"),_(nt,"class","st5 svelte-1mi792v"),_(nt,"x1","1692.68"),_(nt,"y1","1353.76"),_(nt,"x2","1663.6"),_(nt,"y2","1311.18"),_(ct,"id","XMLID_33_"),_(ct,"class","st5 svelte-1mi792v"),_(ct,"x1","1663.6"),_(ct,"y1","1311.18"),_(ct,"x2","1634.08"),_(ct,"y2","1353.76"),_(at,"id","XMLID_34_"),_(at,"class","st5 svelte-1mi792v"),_(at,"x1","1634.08"),_(at,"y1","1353.76"),_(at,"x2","1605.41"),_(at,"y2","1310.36"),_(dt,"id","XMLID_35_"),_(dt,"class","st5 svelte-1mi792v"),_(dt,"x1","1605.41"),_(dt,"y1","1310.36"),_(dt,"x2","1574.59"),_(dt,"y2","1353.3"),_(_t,"id","XMLID_36_"),_(_t,"class","st5 svelte-1mi792v"),_(_t,"x1","1574.59"),_(_t,"y1","1353.3"),_(_t,"x2","1554.52"),_(_t,"y2","1309.64"),_(xt,"id","XMLID_37_"),_(xt,"class","st5 svelte-1mi792v"),_(xt,"x1","1554.52"),_(xt,"y1","1309.64"),_(xt,"x2","1529.56"),_(xt,"y2","1352.42"),_(ut,"id","XMLID_38_"),_(ut,"class","st5 svelte-1mi792v"),_(ut,"x1","1529.56"),_(ut,"y1","1352.42"),_(ut,"x2","1501.91"),_(ut,"y2","1308.9"),_(Mt,"id","XMLID_39_"),_(Mt,"class","st5 svelte-1mi792v"),_(Mt,"x1","1501.91"),_(Mt,"y1","1308.9"),_(Mt,"x2","1476.66"),_(Mt,"y2","1351.38"),_(Dt,"id","XMLID_40_"),_(Dt,"class","st5 svelte-1mi792v"),_(Dt,"x1","1476.66"),_(Dt,"y1","1351.38"),_(Dt,"x2","1454.01"),_(Dt,"y2","1308.22"),_(Xt,"id","XMLID_41_"),_(Xt,"class","st5 svelte-1mi792v"),_(Xt,"x1","1454.01"),_(Xt,"y1","1308.22"),_(Xt,"x2","1426.62"),_(Xt,"y2","1350.4"),_(gt,"id","XMLID_42_"),_(gt,"class","st5 svelte-1mi792v"),_(gt,"x1","1426.62"),_(gt,"y1","1350.4"),_(gt,"x2","1398.18"),_(gt,"y2","1307.43"),_(wt,"id","XMLID_43_"),_(wt,"class","st5 svelte-1mi792v"),_(wt,"d","M1398.18,1307.43l-34.2,41.74L1398.18,1307.43z"),_(Vt,"id","XMLID_45_"),_(Vt,"class","st5 svelte-1mi792v"),_(Vt,"x1","1945.96"),_(Vt,"y1","1380"),_(Vt,"x2","1945.96"),_(Vt,"y2",Ct=1535+760*e[0]),_(zt,"id","XMLID_44_"),_(zt,"class","st5 svelte-1mi792v"),_(zt,"x1","1929.96"),_(zt,"y1","1380"),_(zt,"x2","1929.96"),_(zt,"y2",kt=1535+760*e[0]),_(Tt,"id","XMLID_46_"),_(Tt,"class","st5 svelte-1mi792v"),_(Tt,"style",jt=`transform: translate3d(0, ${760*e[0]}px, 0)`),_(Tt,"d","M1935.33,1585.95c-0.35,7.28-2.56,11.8-4.57,14.61c-2.19,3.07-4.59,4.74-5.3,8.58\n\t\tc-0.13,0.71-0.91,4.98,1.64,8.03c3.19,3.82,10.66,4.66,14.79,0.37c3.04-3.16,3.57-8.35,1.1-12.6"),_(Ot,"id","XMLID_47_"),_(Ot,"class","st5 svelte-1mi792v"),_(Ot,"x1","1256.96"),_(Ot,"y1","1330"),_(Ot,"x2","886.96"),_(Ot,"y2","1330"),_(qt,"id","XMLID_48_"),_(qt,"class","st5 svelte-1mi792v"),_(qt,"x1","1185.96"),_(qt,"y1","1299"),_(qt,"x2","1185.96"),_(qt,"y2","1359"),_(Ht,"id","XMLID_49_"),_(Ht,"class","st5 svelte-1mi792v"),_(Ht,"x1","1132.96"),_(Ht,"y1","1299"),_(Ht,"x2","1132.96"),_(Ht,"y2","1357"),_(Yt,"id","XMLID_50_"),_(Yt,"class","st5 svelte-1mi792v"),_(Yt,"x1","1089.96"),_(Yt,"y1","1299"),_(Yt,"x2","1089.96"),_(Yt,"y2","1357"),_(Gt,"id","XMLID_51_"),_(Gt,"class","st5 svelte-1mi792v"),_(Gt,"x1","1035.96"),_(Gt,"y1","1299"),_(Gt,"x2","1035.96"),_(Gt,"y2","1364"),_(Kt,"id","XMLID_52_"),_(Kt,"class","st5 svelte-1mi792v"),_(Kt,"x1","982.96"),_(Kt,"y1","1299"),_(Kt,"x2","982.96"),_(Kt,"y2","1357"),_(Rt,"id","XMLID_53_"),_(Rt,"class","st5 svelte-1mi792v"),_(Rt,"x1","933.96"),_(Rt,"y1","1299"),_(Rt,"x2","933.96"),_(Rt,"y2","1359"),_(Wt,"id","XMLID_54_"),_(Wt,"class","st5 svelte-1mi792v"),_(Wt,"x1","1342.96"),_(Wt,"y1","2254"),_(Wt,"x2","1272.96"),_(Wt,"y2","2254"),_(te,"id","XMLID_55_"),_(te,"class","st5 svelte-1mi792v"),_(te,"x1","1345.45"),_(te,"y1","2246.69"),_(te,"x2","1272.41"),_(te,"y2","2211.73"),_(se,"id","XMLID_56_"),_(se,"class","st5 svelte-1mi792v"),_(se,"x1","1272.96"),_(se,"y1","2217"),_(se,"x2","1342.96"),_(se,"y2","2217"),_(ie,"id","XMLID_57_"),_(ie,"class","st5 svelte-1mi792v"),_(ie,"x1","1272.41"),_(ie,"y1","2211.73"),_(ie,"x2","1344.84"),_(ie,"y2","2173.44"),_(ve,"id","XMLID_58_"),_(ve,"class","st5 svelte-1mi792v"),_(ve,"x1","1342.96"),_(ve,"y1","2185"),_(ve,"x2","1272.96"),_(ve,"y2","2185"),_(he,"id","XMLID_59_"),_(he,"class","st5 svelte-1mi792v"),_(he,"x1","1345.45"),_(he,"y1","2176.78"),_(he,"x2","1272.41"),_(he,"y2","2130.21"),_(re,"id","XMLID_60_"),_(re,"class","st5 svelte-1mi792v"),_(re,"x1","1272.96"),_(re,"y1","2142"),_(re,"x2","1342.96"),_(re,"y2","2142"),_(oe,"id","XMLID_61_"),_(oe,"class","st5 svelte-1mi792v"),_(oe,"x1","1275.54"),_(oe,"y1","2133.08"),_(oe,"x2","1344.84"),_(oe,"y2","2091.92"),_(ye,"id","XMLID_62_"),_(ye,"class","st5 svelte-1mi792v"),_(ye,"x1","1342.96"),_(ye,"y1","2094"),_(ye,"x2","1272.96"),_(ye,"y2","2094"),_(me,"id","XMLID_63_"),_(me,"class","st5 svelte-1mi792v"),_(me,"x1","1345.45"),_(me,"y1","2089.38"),_(me,"x2","1272.41"),_(me,"y2","2051.79"),_(fe,"id","XMLID_64_"),_(fe,"class","st5 svelte-1mi792v"),_(fe,"x1","1272.96"),_(fe,"y1","2061"),_(fe,"x2","1342.96"),_(fe,"y2","2061"),_(Le,"id","XMLID_65_"),_(Le,"class","st5 svelte-1mi792v"),_(Le,"x1","1275.54"),_(Le,"y1","2054.42"),_(Le,"x2","1345.45"),_(Le,"y2","2009.18"),_(Ie,"id","XMLID_66_"),_(Ie,"class","st5 svelte-1mi792v"),_(Ie,"x1","1342.96"),_(Ie,"y1","2019"),_(Ie,"x2","1272.96"),_(Ie,"y2","2019"),_(pe,"id","XMLID_67_"),_(pe,"class","st5 svelte-1mi792v"),_(pe,"x1","1345.45"),_(pe,"y1","2010.72"),_(pe,"x2","1272.41"),_(pe,"y2","1968.42"),_($e,"id","XMLID_68_"),_($e,"class","st5 svelte-1mi792v"),_($e,"x1","1272.96"),_($e,"y1","1976"),_($e,"x2","1342.96"),_($e,"y2","1976"),_(be,"id","XMLID_69_"),_(be,"class","st5 svelte-1mi792v"),_(be,"x1","1275.54"),_(be,"y1","1967.02"),_(be,"x2","1344.84"),_(be,"y2","1929.51"),_(Ce,"id","XMLID_70_"),_(Ce,"class","st5 svelte-1mi792v"),_(Ce,"x1","1342.96"),_(Ce,"y1","1938"),_(Ce,"x2","1272.96"),_(Ce,"y2","1938"),_(ze,"id","XMLID_71_"),_(ze,"class","st5 svelte-1mi792v"),_(ze,"x1","1345.45"),_(ze,"y1","1932.06"),_(ze,"x2","1272.41"),_(ze,"y2","1890.61"),_(Ae,"id","XMLID_72_"),_(Ae,"class","st5 svelte-1mi792v"),_(Ae,"x1","1272.96"),_(Ae,"y1","1895"),_(Ae,"x2","1342.96"),_(Ae,"y2","1895"),_(je,"id","XMLID_73_"),_(je,"class","st5 svelte-1mi792v"),_(je,"x1","1275.54"),_(je,"y1","1888.37"),_(je,"x2","1344.84"),_(je,"y2","1849.85"),_(Oe,"id","XMLID_74_"),_(Oe,"class","st5 svelte-1mi792v"),_(Oe,"x1","1342.96"),_(Oe,"y1","1858"),_(Oe,"x2","1272.96"),_(Oe,"y2","1858"),_(qe,"id","XMLID_75_"),_(qe,"class","st5 svelte-1mi792v"),_(qe,"x1","1345.45"),_(qe,"y1","1853.41"),_(qe,"x2","1272.41"),_(qe,"y2","1809.71"),_(He,"id","XMLID_76_"),_(He,"class","st5 svelte-1mi792v"),_(He,"x1","1272.96"),_(He,"y1","1815"),_(He,"x2","1342.96"),_(He,"y2","1815"),_(Ye,"id","XMLID_77_"),_(Ye,"class","st5 svelte-1mi792v"),_(Ye,"x1","1275.54"),_(Ye,"y1","1809.71"),_(Ye,"x2","1341.84"),_(Ye,"y2","1767.72"),_(Ge,"id","XMLID_78_"),_(Ge,"class","st5 svelte-1mi792v"),_(Ge,"x1","1342.96"),_(Ge,"y1","1772"),_(Ge,"x2","1272.96"),_(Ge,"y2","1772"),_(Ke,"id","XMLID_79_"),_(Ke,"class","st5 svelte-1mi792v"),_(Ke,"x1","1345.45"),_(Ke,"y1","1766.01"),_(Ke,"x2","1272.41"),_(Ke,"y2","1725.73"),_(Re,"id","XMLID_80_"),_(Re,"class","st5 svelte-1mi792v"),_(Re,"x1","1272.96"),_(Re,"y1","1729"),_(Re,"x2","1342.96"),_(Re,"y2","1729"),_(We,"id","XMLID_81_"),_(We,"class","st5 svelte-1mi792v"),_(We,"x1","1275.54"),_(We,"y1","1722.31"),_(We,"x2","1341.84"),_(We,"y2","1688.06"),_(ts,"id","XMLID_82_"),_(ts,"class","st5 svelte-1mi792v"),_(ts,"x1","1342.96"),_(ts,"y1","1691"),_(ts,"x2","1272.96"),_(ts,"y2","1691"),_(ss,"id","XMLID_83_"),_(ss,"class","st5 svelte-1mi792v"),_(ss,"x1","1345.45"),_(ss,"y1","1687.35"),_(ss,"x2","1272.41"),_(ss,"y2","1647.3"),_(is,"id","XMLID_84_"),_(is,"class","st5 svelte-1mi792v"),_(is,"x1","1272.96"),_(is,"y1","1649"),_(is,"x2","1342.96"),_(is,"y2","1649"),_(vs,"id","XMLID_85_"),_(vs,"class","st5 svelte-1mi792v"),_(vs,"x1","1275.54"),_(vs,"y1","1643.65"),_(vs,"x2","1344.84"),_(vs,"y2","1604.69"),_(hs,"id","XMLID_86_"),_(hs,"class","st5 svelte-1mi792v"),_(hs,"x1","1342.96"),_(hs,"y1","1616"),_(hs,"x2","1272.96"),_(hs,"y2","1616"),_(rs,"id","XMLID_88_"),_(rs,"class","st5 svelte-1mi792v"),_(rs,"x1","1345.45"),_(rs,"y1","1608.69"),_(rs,"x2","1272.41"),_(rs,"y2","1567.02"),_(os,"id","XMLID_89_"),_(os,"class","st5 svelte-1mi792v"),_(os,"x1","1272.96"),_(os,"y1","1574"),_(os,"x2","1342.96"),_(os,"y2","1574"),_(ys,"id","XMLID_90_"),_(ys,"class","st5 svelte-1mi792v"),_(ys,"x1","1275.54"),_(ys,"y1","1565"),_(ys,"x2","1344.84"),_(ys,"y2","1524.8"),_(ms,"id","XMLID_91_"),_(ms,"class","st5 svelte-1mi792v"),_(ms,"x1","1281.11"),_(ms,"y1","1390.94"),_(ms,"x2","1335.8"),_(ms,"y2","1349.17"),_(fs,"id","XMLID_92_"),_(fs,"class","st5 svelte-1mi792v"),_(fs,"x1","1335.8"),_(fs,"y1","1349.17"),_(fs,"x2","1288.19"),_(fs,"y2","1296.59"),_(Ls,"id","XMLID_93_"),_(Ls,"class","st5 svelte-1mi792v"),_(Ls,"x1","1288.19"),_(Ls,"y1","1296.59"),_(Ls,"x2","1325.37"),_(Ls,"y2","1251.89"),_(Is,"id","XMLID_94_"),_(Is,"class","st5 svelte-1mi792v"),_(Is,"x1","1325.37"),_(Is,"y1","1251.89"),_(Is,"x2","1294.35"),_(Is,"y2","1214.46"),_(ps,"id","XMLID_95_"),_(ps,"class","st5 svelte-1mi792v"),_(ps,"x1","1294.35"),_(ps,"y1","1214.46"),_(ps,"x2","1320.64"),_(ps,"y2","1188.86"),_($s,"id","XMLID_96_"),_($s,"class","st5 svelte-1mi792v"),_($s,"x1","1320.64"),_($s,"y1","1188.86"),_($s,"x2","1298.13"),_($s,"y2","1164.09"),_(bs,"id","XMLID_97_"),_(bs,"class","st5 svelte-1mi792v"),_(bs,"x1","1298.13"),_(bs,"y1","1164.09"),_(bs,"x2","1317.22"),_(bs,"y2","1143.39"),_(Es,"id","XMLID_106_"),_(Es,"class","st6 svelte-1mi792v"),_(Es,"d","M3520.56,613.63"),_(zs,"id","XMLID_101_"),_(zs,"class","st7 svelte-1mi792v"),_(zs,"d","M2995.73,795.65c86.01-32.49,172.06-64.94,258.14-97.34c86.76-32.66,173.53-65.27,260.3-97.82\n\t\t\tc0.03-0.02,0.05-0.03,0.08-0.05c-4.13-10.57-8.29-21.14-12.42-31.71c-189.68,71.67-379.36,143.34-569.04,215.01\n\t\t\tc0.07,0.02,0.13,0.03,0.2,0.05c20.73,4.02,41.46,8.03,62.19,12.05C2995.36,795.78,2995.55,795.71,2995.73,795.65z"),_(ks,"id","XMLID_98_"),_(ks,"class","st7 svelte-1mi792v"),_(ks,"d","M3545.91,675.81c-1.26,11.69-5.11,32.9-18.89,55.22c-15.69,25.41-36.07,39.04-46.5,45.05\n\t\t\tc-90.75,34.98-181.51,69.96-272.26,104.95c-0.12-0.02-0.24-0.05-0.37-0.07c-13.97-3.11-46.85-12.45-75.57-41.74\n\t\t\tc-21.22-21.64-30.92-44.74-35.34-57.95c140.87-55.6,281.75-111.19,422.62-166.79c0.35-0.13,0.71-0.26,1.06-0.39\n\t\t\tc8.46,20.87,16.91,41.75,25.37,62.62"),_(As,"id","XMLID_103_"),_(As,"class","st7 svelte-1mi792v"),_(As,"d","M3040.48,804.51l41.16-15.58c4.75,13.64,14.68,36.31,35.34,57.95\n\t\t\tc27.59,28.9,58.86,39.75,73.5,43.82l-105.08,38.03L3040.48,804.51z"),_(Ts,"id","XMLID_99_"),_(Ts,"x","3035.1"),_(Ts,"y","833.77"),_(Ts,"transform","matrix(0.9374 -0.3482 0.3482 0.9374 -112.3799 1114.1121)"),_(Ts,"class","st7 svelte-1mi792v"),_(Ts,"width","16.8"),_(Ts,"height","71.89"),_(js,"id","XMLID_100_"),_(js,"x","2998.8"),_(js,"y","834.37"),_(js,"transform","matrix(0.9374 -0.3482 0.3482 0.9374 -118.656 1103.5922)"),_(js,"class","st7 svelte-1mi792v"),_(js,"width","24.6"),_(js,"height","95.1"),_(Ns,"id","XMLID_104_"),_(Ns,"class","st7 svelte-1mi792v"),_(Ns,"d","M3360.85,819.49l-70.71,25.18l8.19,23c12.33-4.39,24.66-8.78,36.99-13.17\n\t\t\tc11.24-4,22.48-8,33.72-12.01C3366.31,834.83,3363.58,827.16,3360.85,819.49z"),_(Os,"id","XMLID_156_"),_(Os,"class","st9 svelte-1mi792v"),_(Os,"cx","3140"),_(Os,"cy","802.38"),_(Os,"r","9.83"),_(Cs,"transform",Ss=`rotate(${-45*e[0]} 3320 850)`),_(Bs,"id","XMLID_105_"),_(Bs,"class","st7 svelte-1mi792v"),_(Bs,"d","M3627.24,1023.11h-43.31c0-24.57,0-49.15,0-73.72c0-24.31,0-48.63,0-72.94\n\t\t\tc14.44,0,28.87,0,43.31,0V1023.11z"),_(Ps,"id","XMLID_107_"),_(Ps,"class","st8 svelte-1mi792v"),_(Ps,"d","M 3324.62 831.62 C 3338.9 863.33 3345.67 880.47 3355.57 900.51 C 3365.3 920.2 3370.21 930.03 3375.75 936.21 C 3392.17 954.52 3417.6 956.55 3480.3 955.79 C 3513.17 955.39 3551.17 954.29 3593.48 951.89"),_(Fs,"id","XMLID_155_"),_(Fs,"x","3627.24"),_(Fs,"y","747.55"),_(Fs,"class","st7 svelte-1mi792v"),_(Fs,"width","134.89"),_(Fs,"height","1730.13")},m(t,e){h(t,s,e),h(t,l,e),h(t,i,e),h(t,n,e),h(t,v,e),h(t,r,e),h(t,y,e),h(t,x,e),h(t,m,e),h(t,u,e),h(t,f,e),h(t,M,e),h(t,L,e),h(t,D,e),h(t,I,e),h(t,X,e),h(t,p,e),h(t,g,e),h(t,$,e),h(t,w,e),h(t,b,e),h(t,C,e),h(t,E,e),h(t,z,e),h(t,k,e),h(t,A,e),h(t,T,e),h(t,j,e),h(t,N,e),h(t,O,e),h(t,S,e),h(t,q,e),h(t,B,e),h(t,H,e),h(t,P,e),h(t,Y,e),h(t,F,e),h(t,G,e),h(t,J,e),h(t,K,e),h(t,Q,e),h(t,R,e),h(t,U,e),h(t,W,e),h(t,Z,e),h(t,tt,e),h(t,et,e),h(t,st,e),h(t,lt,e),h(t,it,e),h(t,nt,e),h(t,vt,e),h(t,ct,e),h(t,ht,e),h(t,at,e),h(t,rt,e),h(t,dt,e),h(t,ot,e),h(t,_t,e),h(t,yt,e),h(t,xt,e),h(t,mt,e),h(t,ut,e),h(t,ft,e),h(t,Mt,e),h(t,Lt,e),h(t,Dt,e),h(t,It,e),h(t,Xt,e),h(t,pt,e),h(t,gt,e),h(t,$t,e),h(t,wt,e),h(t,bt,e),h(t,Vt,e),h(t,Et,e),h(t,zt,e),h(t,At,e),h(t,Tt,e),h(t,Nt,e),h(t,Ot,e),h(t,St,e),h(t,qt,e),h(t,Bt,e),h(t,Ht,e),h(t,Pt,e),h(t,Yt,e),h(t,Ft,e),h(t,Gt,e),h(t,Jt,e),h(t,Kt,e),h(t,Qt,e),h(t,Rt,e),h(t,Ut,e),h(t,Wt,e),h(t,Zt,e),h(t,te,e),h(t,ee,e),h(t,se,e),h(t,le,e),h(t,ie,e),h(t,ne,e),h(t,ve,e),h(t,ce,e),h(t,he,e),h(t,ae,e),h(t,re,e),h(t,de,e),h(t,oe,e),h(t,_e,e),h(t,ye,e),h(t,xe,e),h(t,me,e),h(t,ue,e),h(t,fe,e),h(t,Me,e),h(t,Le,e),h(t,De,e),h(t,Ie,e),h(t,Xe,e),h(t,pe,e),h(t,ge,e),h(t,$e,e),h(t,we,e),h(t,be,e),h(t,Ve,e),h(t,Ce,e),h(t,Ee,e),h(t,ze,e),h(t,ke,e),h(t,Ae,e),h(t,Te,e),h(t,je,e),h(t,Ne,e),h(t,Oe,e),h(t,Se,e),h(t,qe,e),h(t,Be,e),h(t,He,e),h(t,Pe,e),h(t,Ye,e),h(t,Fe,e),h(t,Ge,e),h(t,Je,e),h(t,Ke,e),h(t,Qe,e),h(t,Re,e),h(t,Ue,e),h(t,We,e),h(t,Ze,e),h(t,ts,e),h(t,es,e),h(t,ss,e),h(t,ls,e),h(t,is,e),h(t,ns,e),h(t,vs,e),h(t,cs,e),h(t,hs,e),h(t,as,e),h(t,rs,e),h(t,ds,e),h(t,os,e),h(t,_s,e),h(t,ys,e),h(t,xs,e),h(t,ms,e),h(t,us,e),h(t,fs,e),h(t,Ms,e),h(t,Ls,e),h(t,Ds,e),h(t,Is,e),h(t,Xs,e),h(t,ps,e),h(t,gs,e),h(t,$s,e),h(t,ws,e),h(t,bs,e),h(t,Vs,e),h(t,Cs,e),c(Cs,Es),c(Cs,zs),c(Cs,ks),c(Cs,As),c(Cs,Ts),c(Cs,js),c(Cs,Ns),c(Cs,Os),h(t,qs,e),h(t,Bs,e),h(t,Hs,e),h(t,Ps,e),h(t,Ys,e),h(t,Fs,e)},p(t,[e]){1&e&&V!==(V=`matrix(-1 -4.488111e-11 4.488111e-11 -1 3876.1985 3118.999) translate(0, ${760*-t[0]})`)&&_(b,"transform",V),1&e&&Ct!==(Ct=1535+760*t[0])&&_(Vt,"y2",Ct),1&e&&kt!==(kt=1535+760*t[0])&&_(zt,"y2",kt),1&e&&jt!==(jt=`transform: translate3d(0, ${760*t[0]}px, 0)`)&&_(Tt,"style",jt),1&e&&Ss!==(Ss=`rotate(${-45*t[0]} 3320 850)`)&&_(Cs,"transform",Ss)},i:t,o:t,d(t){t&&a(s),t&&a(l),t&&a(i),t&&a(n),t&&a(v),t&&a(r),t&&a(y),t&&a(x),t&&a(m),t&&a(u),t&&a(f),t&&a(M),t&&a(L),t&&a(D),t&&a(I),t&&a(X),t&&a(p),t&&a(g),t&&a($),t&&a(w),t&&a(b),t&&a(C),t&&a(E),t&&a(z),t&&a(k),t&&a(A),t&&a(T),t&&a(j),t&&a(N),t&&a(O),t&&a(S),t&&a(q),t&&a(B),t&&a(H),t&&a(P),t&&a(Y),t&&a(F),t&&a(G),t&&a(J),t&&a(K),t&&a(Q),t&&a(R),t&&a(U),t&&a(W),t&&a(Z),t&&a(tt),t&&a(et),t&&a(st),t&&a(lt),t&&a(it),t&&a(nt),t&&a(vt),t&&a(ct),t&&a(ht),t&&a(at),t&&a(rt),t&&a(dt),t&&a(ot),t&&a(_t),t&&a(yt),t&&a(xt),t&&a(mt),t&&a(ut),t&&a(ft),t&&a(Mt),t&&a(Lt),t&&a(Dt),t&&a(It),t&&a(Xt),t&&a(pt),t&&a(gt),t&&a($t),t&&a(wt),t&&a(bt),t&&a(Vt),t&&a(Et),t&&a(zt),t&&a(At),t&&a(Tt),t&&a(Nt),t&&a(Ot),t&&a(St),t&&a(qt),t&&a(Bt),t&&a(Ht),t&&a(Pt),t&&a(Yt),t&&a(Ft),t&&a(Gt),t&&a(Jt),t&&a(Kt),t&&a(Qt),t&&a(Rt),t&&a(Ut),t&&a(Wt),t&&a(Zt),t&&a(te),t&&a(ee),t&&a(se),t&&a(le),t&&a(ie),t&&a(ne),t&&a(ve),t&&a(ce),t&&a(he),t&&a(ae),t&&a(re),t&&a(de),t&&a(oe),t&&a(_e),t&&a(ye),t&&a(xe),t&&a(me),t&&a(ue),t&&a(fe),t&&a(Me),t&&a(Le),t&&a(De),t&&a(Ie),t&&a(Xe),t&&a(pe),t&&a(ge),t&&a($e),t&&a(we),t&&a(be),t&&a(Ve),t&&a(Ce),t&&a(Ee),t&&a(ze),t&&a(ke),t&&a(Ae),t&&a(Te),t&&a(je),t&&a(Ne),t&&a(Oe),t&&a(Se),t&&a(qe),t&&a(Be),t&&a(He),t&&a(Pe),t&&a(Ye),t&&a(Fe),t&&a(Ge),t&&a(Je),t&&a(Ke),t&&a(Qe),t&&a(Re),t&&a(Ue),t&&a(We),t&&a(Ze),t&&a(ts),t&&a(es),t&&a(ss),t&&a(ls),t&&a(is),t&&a(ns),t&&a(vs),t&&a(cs),t&&a(hs),t&&a(as),t&&a(rs),t&&a(ds),t&&a(os),t&&a(_s),t&&a(ys),t&&a(xs),t&&a(ms),t&&a(us),t&&a(fs),t&&a(Ms),t&&a(Ls),t&&a(Ds),t&&a(Is),t&&a(Xs),t&&a(ps),t&&a(gs),t&&a($s),t&&a(ws),t&&a(bs),t&&a(Vs),t&&a(Cs),t&&a(qs),t&&a(Bs),t&&a(Hs),t&&a(Ps),t&&a(Ys),t&&a(Fs)}}}function O(t,e,s){let{t:l}=e;return t.$set=t=>{"t"in t&&s(0,l=t.t)},[l]}class S extends j{constructor(t){super(),T(this,t,O,N,n,{t:0})}}function q(t){let e;const s=new S({props:{t:t[2]}});return{c(){E(s.$$.fragment)},m(t,l){z(s,t,l),e=!0},p(t,e){const l={};4&e&&(l.t=t[2]),s.$set(l)},i(t){e||(V(s.$$.fragment,t),e=!0)},o(t){C(s.$$.fragment,t),e=!1},d(t){k(s,t)}}}function B(t){let e,s,l,i,n,c=0===t[0]&&q(t);return{c(){c&&c.c(),e=o(),s=d("path"),_(s,"class",l=v(`layer-${t[0]}`)+" svelte-1qbsmg6"),_(s,"style",t[1]),_(s,"d",i=t[3][t[0]].split(/ |\n/).join("")||"M0,0")},m(t,l){c&&c.m(t,l),h(t,e,l),h(t,s,l),n=!0},p(t,[h]){0===t[0]?c?(c.p(t,h),V(c,1)):(c=q(t),c.c(),V(c,1),c.m(e.parentNode,e)):c&&(w(),C(c,1,1,()=>{c=null}),b()),(!n||1&h&&l!==(l=v(`layer-${t[0]}`)+" svelte-1qbsmg6"))&&_(s,"class",l),(!n||2&h)&&_(s,"style",t[1]),(!n||1&h&&i!==(i=t[3][t[0]].split(/ |\n/).join("")||"M0,0"))&&_(s,"d",i)},i(t){n||(V(c),n=!0)},o(t){C(c),n=!1},d(t){c&&c.d(t),t&&a(e),t&&a(s)}}}function H(t,e,s){let{depth:l=1}=e,{style:i="color: black"}=e,{t:n=0}=e;const v=["M2538.96,2479c-846.33-0.19-1692.67-0.19-2539,0v-440h205v140h75v-17h96v-10h59v10h32v17h17v69\n\t\th70v-80h16v-32h97v-97h27v91h43v38h48v-64h43v-54h22v54h70v75h48v-38h64v-27h113v27h44v204h54v-124h48v-32h75v32h32v108.58\n\t\tl1.06-0.5l62.94-37.43V2232h82v-225h16v-18.77c19,0.34,38.92,1.94,58.49,2.28c0.14,5.08,0.06,11.49,0.2,16.49h21.3v64h209v145h28\n\t\tv32h49v32h37v-64h43v-65.22v6.22h91v27h248v-129h64v-32h27v32h64v172h38.26l0.2-2.46c16.13-11.77,30.85-23.63,46.98-35.39\n\t\tl49.55,32.54v79.25l0.05,1.56c8.96-0.25,17.94-0.51,26.9-0.76c-0.01-2.13,0-1.84-0.01-3.97c-0.06-12.09-0.11-22.76-0.16-33.76\n\t\tc0.06,0,0.13,0,0.19,0c7.13,0,14.53-3,21.66-3.26c0.03-0.89-0.62-4.21,0.38-5.1v-62.27c-1-0.43-0.34-0.87-0.38-1.3\n\t\tc41.71-0.58,83.29-1.16,125.01-1.74c0.06,12.78,0.07,28.22,0.16,41.06c0.09,12.02,0.12,22.61,0.24,38.61c2.97,0,5.93,0,8.9,0\n\t\tc-0.01,0-0.02-4.92-0.03-6.06c0.01-46.03,0.02-93.38,0.03-139.41c-0.04-0.04-0.09-0.75-0.13-0.79c26.52-0.13,53.05-0.6,79.57-0.73\n\t\tc0-0.96-0.01-2.09-0.01-3.05c-0.01-3.11,0.01-6.34,0.05-9.54c0.04-2.79,0.1-4.59,0.17-7.31c0.94-0.02,1.89,0.9,2.84,0.9h22.11\n\t\tc0.93,0,1.86-0.89,2.79-0.83c-0.04,7.19-0.07,14.54-0.11,21.73c0.95-0.02,1.9,0.1,2.84,0.1h22.11c0.75,0,1.5-0.55,2.25-0.49\n\t\tc0.11,10.79,0.19,21.31,0.25,32.21c0.05,10.88,0.08,21.55,0.07,32.33c0.99-0.06,1.97-0.2,2.96-0.26\n\t\tc16.59,0.02,33.18,0.01,49.77,0.03c0.33-0.03,0.67-0.08,0.67-0.05c0,0.01-0.14,0.01-0.14,0.01c0,10.81,0,21.61,0,32.41\n\t\tc6,0.01,4.23-5.18,4.98-0.18h27.64c0.87,0,1.74,0.23,2.61,0.29c-0.13,36-0.25,72.06-0.38,108.06c1.1,0.06,2.2,0.15,3.3,0.21\n\t\tc19.61,0.08,39.22,0.16,58.83,0.24c-0.02-2.08-0.04-4.15-0.06-6.23c0.37-8.86,0.73-17.71,1.1-26.57\n\t\tc5.02-0.04,10.03-0.09,15.05-0.13c-0.01-2.06-0.01-5.2-0.02-7.26c-0.04-21.02-0.02-41.79,0.07-62.7c2.65-0.03,5.3,0.1,7.95,0.1\n\t\th99.5c0.88,0,1.76-0.13,2.64-0.1c0.12-9.24,0.21-18.61,0.28-27.93c0.08-11.61,0.12-23.19,0.12-34.66\n\t\tc5.4,0.08,10.79,0.14,16.19,0.22c0.04,20.87,0.08,41.73,0.11,62.61c0.92-0.16,1.84-0.33,2.77-0.5\n\t\tc80.13-0.02,160.25-0.04,240.38-0.06c-0.02-6.22-0.05-12.46-0.09-18.72c-0.04-6.28-0.09-12.54-0.16-18.79\n\t\tc1.03-0.02,2.06-0.04,3.09-0.06h38.7c0.72,0,1.43,0,2.15,0c0.23,17.97,0.45,35.94,0.68,53.91c0.9,0.02,1.8-0.01,2.7,0.01\n\t\tc11.39,0.09,22.79,0.16,34.18,0.25c0.15-1.5,0.3-3,0.46-4.5c0.08-40.1,0.17-80.21,0.25-120.31c1.27-0.03,2.54-0.06,3.81-0.09\n\t\tc19.34,0.08,38.67,0.15,58.01,0.23c0.01-1.24,0.02-2.48,0.03-3.72c-0.08-13.27-0.13-26.59-0.16-39.95\n\t\tc-0.03-12.64-0.03-24.23-0.01-36.79c0.98-0.02,1.96,0.95,2.94,0.95h82.92c0.78,0,1.56-0.87,2.33-0.81\n\t\tc0.03,12.56,0.08,24.65,0.16,37.27c0.07,12.37,0.16,24.45,0.27,36.75c0.32-0.02,0.64-0.16,0.95-0.17c5.15-0.01,10.3-0.4,15.45-0.41\n\t\tc-0.2,14.74-0.15,29.66,0.18,44.82c0.04,1.88,0.09,3.74,0.14,5.62c13.77-0.15,27.55-0.2,41.32-0.35\n\t\tc0.29,17.69,0.59,35.39,0.88,53.08c7.96,0.05,15.93,0.1,23.89,0.16c-0.02,16.58-0.04,33.16-0.07,49.74\n\t\tc0.98-0.02,1.96-0.06,2.94-0.08c7.85-0.07,15.83-0.09,23.93-0.01c8.38,0.08,16.24,0.24,24.35,0.47c0.04-1.26-0.27-2.52-0.27-3.78\n\t\tv-158.5c0-0.13-0.16-0.19-0.17-0.2c0,0-0.28,0.04-0.42,0.14c8.98,0.02,17.85,0.04,26.83,0.06c-0.02,52.05-0.09,104.11-0.11,156.16\n\t\tc1.1,0.06,2.17,0.12,3.27,0.18c9.67,0.04,19.33,0.08,29,0.12c0.04-1.21,0.07-2.42,0.1-3.63c-0.06-24.11-0.13-48.22-0.2-72.33\n\t\tc1.41-0.08,2.82-0.16,4.24-0.24c27.34-0.09,54.69-0.17,82.03-0.26c0.07-2.14,0.14-4.28,0.21-6.42c0.03-23.04,0.06-45.08,0.09-68.12\n\t\tc2.04-0.09,4.08,0.72,6.12,0.72c10.11,0,20.21,0,30.32,0c0.03,0,0.06-3.34,0.09-4.51c-0.03-22.39-0.06-43.96-0.09-66.35\n\t\tc0.95,0.01,1.9,0.86,2.85,0.86h82.92c1.7,0,2.55,0,2.55,0s-0.09,0-0.26,0c0.04,11,0.08,24.55,0.13,37.51\n\t\tc0.05,12.4,0.1,24.14,0.16,36.52c-0.02,0.05-0.05-0.23-0.07-0.18c21.28-0.03,42.55-0.22,63.83-0.24l-1.34,0.62l23.12-24.52\n\t\tl43.07,48.09c0.12,50.09,0.24,100.16,0.37,150.25c10.6,0.06,21.19,0.12,31.79,0.19c-0.01-47.4-0.03-94.81-0.04-142.21\n\t\tc2.69,0.01,5.38,0.01,8.07,0.01c8.27,0.04,16.55,0.09,24.82,0.13c0.02-1.14,0.03-2.28,0.05-3.42c0.04-6.3,0.14-19.44,0.18-25.74\n\t\tc0.05-7,0.32-20.41,0.38-27.42c30.32,0.09,60.03,0.18,91.12,0.27v0.86c-0.05,130-0.09,260.01-0.14,390.01\n    C3786.2,2479.39,3162.58,2479.14,2538.96,2479z","M972.96,1830h27v64h32v-136.33l-2.29-1.23l35.83-34.39l37.07,37.95h26.39v-85h76v118h27v101h27v38h48v-102\n\t\th-2.57l10.2-60.29l19.37,57.67V1873h27v29.44l2.12-0.11l23.88,5.47v24.2h22v-97h21v-48h32v-21h16v-102h77v91h32v102h21v-81h27\n\t\tv-12.97l-0.83-2.26l39.66-39.49l31.17,31.02V1776h26v86h27v32h32v33h60.06h4.94v-70h33v-59h11v59h27v75h21v-193h16v-22h11v-16h27\n\t\tv16h10v22h16v145h27v-49h38v-26h53v32h49v80h49v-43h48v-32h27v16h11v-152.59l1.33-2.44l46.3-46.29l43.37,43.36v166.22v1.29\n\t\tl32.32,33.44h79.68v-188h28v-10h27v-43h21v37h27v16h27v76h32v-49h16v38h27v16h27v75h16v32h114v-27h75v22h48v-32h43v-27h48v27h27v64\n\t\th11v-38h59v38h22v-123h38v-156h16v-16h26v-86h11v86h11v21h21v188h65v97h59v-102h32v-29.71l0.69,0.41l32.36-32.1l31.95,31.69V1846\n\t\th38v91h16v-48h37v48h38v-96h43v-86h75v91h16v16h37v54h17v182h43v-139h33v-59h10v-59h11v59h11v112h70v-120.28l-0.89,0.44\n\t\tl26.89-27.25V1755h75v91h22.2l-1.35-3.47l48.17-48.47l44.99,44.03v112.6l0.36-0.18l37.64-37.35V1793h91v686h-4410v-692h32v43h11v38\n\t\th37v75h17v-126.35l-0.41,0.6l40.86-39.37l34.88,36.13h32.67v-80h75v96h21v161h70v-118h32v59h38.2h-6.2v129h43v-169.28l-1.06,1.36\n    l50.06-49.62V1814h27v-91h75v64h32v129h43v-48h43v48h32v-22h17v22h70v-193h75v37h27v70","M1307.51,1112.15c9.91,71.28,19.81,142.57,29.72,213.85h33.72v97h16v48h27v134h135v70h48v37\n\t\th43v-456h43v-75h75V972h11v209h59v67.3v7.7h44v124h118v43h27v316h43v-188h93.72l-0.49-2.98c-7.38-256.12-6.36-525.19,5.62-804.85\n\t\tc4.25-99.27,9.76-197.21,16.38-293.15l-0.69-0.48l159.46-43.05V495h45.31l2.5,0.17l26.23-75.49\n\t\tc26.09,232.88,44.56,486.02,50.59,754.92c4.03,179.73,2.16,349.41-4.13,516.41h77.49v-113h23v-86h86v70h37v64h32v172h54v-123h59\n\t\tv-70h27v70h49v-180.06l1.65,1.87l80.74-80.87l89.61,89.72V1739h0.32l62.57-317.99l38.11,229.42V1471h50v-65h27v65h42v246h81v-150\n\t\th80v-257h98.26l-2.76-3.75l23.51,22.47V1262h43v69h16v386h32v-152.35l-0.58-1.44l72.07-72.22l73.51,73.66V1739h16v-172h162v172h64\n\t\tv-509h70v-108h32v108h38v37h48v483h173v729h-4410v-984.06l2.89-2.68l35.11,34.85V1739h21v-86h91v91h60v-161h182v129h11v59h38\n\t\tv-120.57V1664h108v-123h37v-118h81v64h123v300h49v-544.06l-1.29,2.51l72.03-71.29l80.26,79.51V1884h53v-354h22v-38h64v43h73.99\n    l-8.99-7.89V1460h27v-37h27v-97h30.19c-0.16,0-0.33,0-0.49,0C1287.61,1254.72,1297.56,1183.43,1307.51,1112.15z"];return t.$set=t=>{"depth"in t&&s(0,l=t.depth),"style"in t&&s(1,i=t.style),"t"in t&&s(2,n=t.t)},[l,i,n,v]}class P extends j{constructor(t){super(),T(this,t,H,B,n,{depth:0,style:1,t:2})}}function Y(t,e,s){const l=t.slice();return l[5]=e[s],l}function F(t){let e;const s=new P({props:{t:t[0]/t[1],depth:t[5],style:"transform: translate(0,"+t[0]/t[1]*t[5]*500+"px); opacity: "}});return{c(){E(s.$$.fragment)},m(t,l){z(s,t,l),e=!0},p(t,e){const l={};3&e&&(l.t=t[0]/t[1]),3&e&&(l.style="transform: translate(0,"+t[0]/t[1]*t[5]*500+"px); opacity: "),s.$set(l)},i(t){e||(V(s.$$.fragment,t),e=!0)},o(t){C(s.$$.fragment,t),e=!1},d(t){k(s,t)}}}function G(t){let e,s,l,i,n,v,y,x,m,u=!1,f=()=>{u=!1};I(t[3]);let M=t[2],L=[];for(let e=0;e<M.length;e+=1)L[e]=F(Y(t,M,e));const D=t=>C(L[t],1,1,()=>{L[t]=null});return{c(){s=r("div"),l=r("div"),i=d("svg");for(let t=0;t<L.length;t+=1)L[t].c();var n,c,h,a;v=o(),y=r("div"),_(i,"id","background"),_(i,"viewBox","0 0 4409.92 2479.24"),I(()=>t[4].call(l)),_(y,"class","foreground svelte-7vf16g"),_(s,"class","main svelte-7vf16g"),n=window,c="scroll",h=()=>{u=!0,clearTimeout(e),e=setTimeout(f,100),t[3]()},n.addEventListener(c,h,a),m=()=>n.removeEventListener(c,h,a)},m(e,a){h(e,s,a),c(s,l),c(l,i);for(let t=0;t<L.length;t+=1)L[t].m(i,null);n=function(t,e){"static"===getComputedStyle(t).position&&(t.style.position="relative");const s=document.createElement("object");let l;return s.setAttribute("style","display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;"),s.setAttribute("aria-hidden","true"),s.type="text/html",s.tabIndex=-1,s.onload=()=>{l=s.contentDocument.defaultView,l.addEventListener("resize",e)},/Trident/.test(navigator.userAgent)?(t.appendChild(s),s.data="about:blank"):(s.data="about:blank",t.appendChild(s)),{cancel:()=>{l&&l.removeEventListener&&l.removeEventListener("resize",e),t.removeChild(s)}}}(l,t[4].bind(l)),c(s,v),c(s,y),x=!0},p(t,[s]){if(1&s&&!u&&(u=!0,clearTimeout(e),scrollTo(window.pageXOffset,t[0]),e=setTimeout(f,100)),7&s){let e;for(M=t[2],e=0;e<M.length;e+=1){const l=Y(t,M,e);L[e]?(L[e].p(l,s),V(L[e],1)):(L[e]=F(l),L[e].c(),V(L[e],1),L[e].m(i,null))}for(w(),e=M.length;e<L.length;e+=1)D(e);b()}},i(t){if(!x){for(let t=0;t<M.length;t+=1)V(L[t]);x=!0}},o(t){L=L.filter(Boolean);for(let t=0;t<L.length;t+=1)C(L[t]);x=!1},d(t){t&&a(s),function(t,e){for(let s=0;s<t.length;s+=1)t[s]&&t[s].d(e)}(L,t),n.cancel(),m()}}}function J(t,e,s){let l=0,i=1;return[l,i,[2,1,0],function(){s(0,l=window.pageYOffset)},function(){i=this.clientHeight,s(1,i)}]}return new class extends j{constructor(t){super(),T(this,t,J,G,n,{})}}({target:document.body,props:{}})}();
+
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.head.appendChild(r) })(window.document);
+var app = (function () {
+    'use strict';
+
+    function noop() { }
+    function add_location(element, file, line, column, char) {
+        element.__svelte_meta = {
+            loc: { file, line, column, char }
+        };
+    }
+    function run(fn) {
+        return fn();
+    }
+    function blank_object() {
+        return Object.create(null);
+    }
+    function run_all(fns) {
+        fns.forEach(run);
+    }
+    function is_function(thing) {
+        return typeof thing === 'function';
+    }
+    function safe_not_equal(a, b) {
+        return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
+    }
+    function null_to_empty(value) {
+        return value == null ? '' : value;
+    }
+
+    function append(target, node) {
+        target.appendChild(node);
+    }
+    function insert(target, node, anchor) {
+        target.insertBefore(node, anchor || null);
+    }
+    function detach(node) {
+        node.parentNode.removeChild(node);
+    }
+    function destroy_each(iterations, detaching) {
+        for (let i = 0; i < iterations.length; i += 1) {
+            if (iterations[i])
+                iterations[i].d(detaching);
+        }
+    }
+    function element(name) {
+        return document.createElement(name);
+    }
+    function svg_element(name) {
+        return document.createElementNS('http://www.w3.org/2000/svg', name);
+    }
+    function text(data) {
+        return document.createTextNode(data);
+    }
+    function space() {
+        return text(' ');
+    }
+    function listen(node, event, handler, options) {
+        node.addEventListener(event, handler, options);
+        return () => node.removeEventListener(event, handler, options);
+    }
+    function attr(node, attribute, value) {
+        if (value == null)
+            node.removeAttribute(attribute);
+        else if (node.getAttribute(attribute) !== value)
+            node.setAttribute(attribute, value);
+    }
+    function children(element) {
+        return Array.from(element.childNodes);
+    }
+    function add_resize_listener(element, fn) {
+        if (getComputedStyle(element).position === 'static') {
+            element.style.position = 'relative';
+        }
+        const object = document.createElement('object');
+        object.setAttribute('style', 'display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;');
+        object.setAttribute('aria-hidden', 'true');
+        object.type = 'text/html';
+        object.tabIndex = -1;
+        let win;
+        object.onload = () => {
+            win = object.contentDocument.defaultView;
+            win.addEventListener('resize', fn);
+        };
+        if (/Trident/.test(navigator.userAgent)) {
+            element.appendChild(object);
+            object.data = 'about:blank';
+        }
+        else {
+            object.data = 'about:blank';
+            element.appendChild(object);
+        }
+        return {
+            cancel: () => {
+                win && win.removeEventListener && win.removeEventListener('resize', fn);
+                element.removeChild(object);
+            }
+        };
+    }
+    function custom_event(type, detail) {
+        const e = document.createEvent('CustomEvent');
+        e.initCustomEvent(type, false, false, detail);
+        return e;
+    }
+
+    let current_component;
+    function set_current_component(component) {
+        current_component = component;
+    }
+    function get_current_component() {
+        if (!current_component)
+            throw new Error(`Function called outside component initialization`);
+        return current_component;
+    }
+    function onMount(fn) {
+        get_current_component().$$.on_mount.push(fn);
+    }
+
+    const dirty_components = [];
+    const binding_callbacks = [];
+    const render_callbacks = [];
+    const flush_callbacks = [];
+    const resolved_promise = Promise.resolve();
+    let update_scheduled = false;
+    function schedule_update() {
+        if (!update_scheduled) {
+            update_scheduled = true;
+            resolved_promise.then(flush);
+        }
+    }
+    function add_render_callback(fn) {
+        render_callbacks.push(fn);
+    }
+    function flush() {
+        const seen_callbacks = new Set();
+        do {
+            // first, call beforeUpdate functions
+            // and update components
+            while (dirty_components.length) {
+                const component = dirty_components.shift();
+                set_current_component(component);
+                update(component.$$);
+            }
+            while (binding_callbacks.length)
+                binding_callbacks.pop()();
+            // then, once components are updated, call
+            // afterUpdate functions. This may cause
+            // subsequent updates...
+            for (let i = 0; i < render_callbacks.length; i += 1) {
+                const callback = render_callbacks[i];
+                if (!seen_callbacks.has(callback)) {
+                    callback();
+                    // ...so guard against infinite loops
+                    seen_callbacks.add(callback);
+                }
+            }
+            render_callbacks.length = 0;
+        } while (dirty_components.length);
+        while (flush_callbacks.length) {
+            flush_callbacks.pop()();
+        }
+        update_scheduled = false;
+    }
+    function update($$) {
+        if ($$.fragment !== null) {
+            $$.update();
+            run_all($$.before_update);
+            const dirty = $$.dirty;
+            $$.dirty = [-1];
+            $$.fragment && $$.fragment.p($$.ctx, dirty);
+            $$.after_update.forEach(add_render_callback);
+        }
+    }
+    const outroing = new Set();
+    let outros;
+    function group_outros() {
+        outros = {
+            r: 0,
+            c: [],
+            p: outros // parent group
+        };
+    }
+    function check_outros() {
+        if (!outros.r) {
+            run_all(outros.c);
+        }
+        outros = outros.p;
+    }
+    function transition_in(block, local) {
+        if (block && block.i) {
+            outroing.delete(block);
+            block.i(local);
+        }
+    }
+    function transition_out(block, local, detach, callback) {
+        if (block && block.o) {
+            if (outroing.has(block))
+                return;
+            outroing.add(block);
+            outros.c.push(() => {
+                outroing.delete(block);
+                if (callback) {
+                    if (detach)
+                        block.d(1);
+                    callback();
+                }
+            });
+            block.o(local);
+        }
+    }
+    function create_component(block) {
+        block && block.c();
+    }
+    function mount_component(component, target, anchor) {
+        const { fragment, on_mount, on_destroy, after_update } = component.$$;
+        fragment && fragment.m(target, anchor);
+        // onMount happens before the initial afterUpdate
+        add_render_callback(() => {
+            const new_on_destroy = on_mount.map(run).filter(is_function);
+            if (on_destroy) {
+                on_destroy.push(...new_on_destroy);
+            }
+            else {
+                // Edge case - component was destroyed immediately,
+                // most likely as a result of a binding initialising
+                run_all(new_on_destroy);
+            }
+            component.$$.on_mount = [];
+        });
+        after_update.forEach(add_render_callback);
+    }
+    function destroy_component(component, detaching) {
+        const $$ = component.$$;
+        if ($$.fragment !== null) {
+            run_all($$.on_destroy);
+            $$.fragment && $$.fragment.d(detaching);
+            // TODO null out other refs, including component.$$ (but need to
+            // preserve final state?)
+            $$.on_destroy = $$.fragment = null;
+            $$.ctx = [];
+        }
+    }
+    function make_dirty(component, i) {
+        if (component.$$.dirty[0] === -1) {
+            dirty_components.push(component);
+            schedule_update();
+            component.$$.dirty.fill(0);
+        }
+        component.$$.dirty[(i / 31) | 0] |= (1 << (i % 31));
+    }
+    function init(component, options, instance, create_fragment, not_equal, props, dirty = [-1]) {
+        const parent_component = current_component;
+        set_current_component(component);
+        const prop_values = options.props || {};
+        const $$ = component.$$ = {
+            fragment: null,
+            ctx: null,
+            // state
+            props,
+            update: noop,
+            not_equal,
+            bound: blank_object(),
+            // lifecycle
+            on_mount: [],
+            on_destroy: [],
+            before_update: [],
+            after_update: [],
+            context: new Map(parent_component ? parent_component.$$.context : []),
+            // everything else
+            callbacks: blank_object(),
+            dirty
+        };
+        let ready = false;
+        $$.ctx = instance
+            ? instance(component, prop_values, (i, ret, value = ret) => {
+                if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
+                    if ($$.bound[i])
+                        $$.bound[i](value);
+                    if (ready)
+                        make_dirty(component, i);
+                }
+                return ret;
+            })
+            : [];
+        $$.update();
+        ready = true;
+        run_all($$.before_update);
+        // `false` as a special case of no DOM component
+        $$.fragment = create_fragment ? create_fragment($$.ctx) : false;
+        if (options.target) {
+            if (options.hydrate) {
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.l(children(options.target));
+            }
+            else {
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.c();
+            }
+            if (options.intro)
+                transition_in(component.$$.fragment);
+            mount_component(component, options.target, options.anchor);
+            flush();
+        }
+        set_current_component(parent_component);
+    }
+    class SvelteComponent {
+        $destroy() {
+            destroy_component(this, 1);
+            this.$destroy = noop;
+        }
+        $on(type, callback) {
+            const callbacks = (this.$$.callbacks[type] || (this.$$.callbacks[type] = []));
+            callbacks.push(callback);
+            return () => {
+                const index = callbacks.indexOf(callback);
+                if (index !== -1)
+                    callbacks.splice(index, 1);
+            };
+        }
+        $set() {
+            // overridden by instance, if it has props
+        }
+    }
+
+    function dispatch_dev(type, detail) {
+        document.dispatchEvent(custom_event(type, detail));
+    }
+    function append_dev(target, node) {
+        dispatch_dev("SvelteDOMInsert", { target, node });
+        append(target, node);
+    }
+    function insert_dev(target, node, anchor) {
+        dispatch_dev("SvelteDOMInsert", { target, node, anchor });
+        insert(target, node, anchor);
+    }
+    function detach_dev(node) {
+        dispatch_dev("SvelteDOMRemove", { node });
+        detach(node);
+    }
+    function listen_dev(node, event, handler, options, has_prevent_default, has_stop_propagation) {
+        const modifiers = options === true ? ["capture"] : options ? Array.from(Object.keys(options)) : [];
+        if (has_prevent_default)
+            modifiers.push('preventDefault');
+        if (has_stop_propagation)
+            modifiers.push('stopPropagation');
+        dispatch_dev("SvelteDOMAddEventListener", { node, event, handler, modifiers });
+        const dispose = listen(node, event, handler, options);
+        return () => {
+            dispatch_dev("SvelteDOMRemoveEventListener", { node, event, handler, modifiers });
+            dispose();
+        };
+    }
+    function attr_dev(node, attribute, value) {
+        attr(node, attribute, value);
+        if (value == null)
+            dispatch_dev("SvelteDOMRemoveAttribute", { node, attribute });
+        else
+            dispatch_dev("SvelteDOMSetAttribute", { node, attribute, value });
+    }
+    class SvelteComponentDev extends SvelteComponent {
+        constructor(options) {
+            if (!options || (!options.target && !options.$$inline)) {
+                throw new Error(`'target' is a required option`);
+            }
+            super();
+        }
+        $destroy() {
+            super.$destroy();
+            this.$destroy = () => {
+                console.warn(`Component was already destroyed`); // eslint-disable-line no-console
+            };
+        }
+    }
+
+    /* src/components/extra.svelte generated by Svelte v3.16.7 */
+
+    const file = "src/components/extra.svelte";
+
+    function create_fragment(ctx) {
+    	let rect0;
+    	let t0;
+    	let rect1;
+    	let t1;
+    	let rect2;
+    	let t2;
+    	let path0;
+    	let t3;
+    	let polyline;
+    	let t4;
+    	let rect3;
+    	let t5;
+    	let rect4;
+    	let t6;
+    	let rect5;
+    	let t7;
+    	let rect6;
+    	let t8;
+    	let rect7;
+    	let t9;
+    	let rect8;
+    	let rect8_transform_value;
+    	let t10;
+    	let line0;
+    	let t11;
+    	let line1;
+    	let t12;
+    	let line2;
+    	let t13;
+    	let line3;
+    	let t14;
+    	let line4;
+    	let t15;
+    	let line5;
+    	let t16;
+    	let line6;
+    	let t17;
+    	let line7;
+    	let t18;
+    	let line8;
+    	let t19;
+    	let polygon;
+    	let t20;
+    	let line9;
+    	let t21;
+    	let line10;
+    	let t22;
+    	let line11;
+    	let t23;
+    	let line12;
+    	let t24;
+    	let line13;
+    	let t25;
+    	let line14;
+    	let t26;
+    	let line15;
+    	let t27;
+    	let line16;
+    	let t28;
+    	let line17;
+    	let t29;
+    	let line18;
+    	let t30;
+    	let line19;
+    	let t31;
+    	let line20;
+    	let t32;
+    	let line21;
+    	let t33;
+    	let line22;
+    	let t34;
+    	let line23;
+    	let t35;
+    	let path1;
+    	let t36;
+    	let line24;
+    	let line24_y__value;
+    	let t37;
+    	let line25;
+    	let line25_y__value;
+    	let t38;
+    	let path2;
+    	let path2_style_value;
+    	let t39;
+    	let line26;
+    	let t40;
+    	let line27;
+    	let t41;
+    	let line28;
+    	let t42;
+    	let line29;
+    	let t43;
+    	let line30;
+    	let t44;
+    	let line31;
+    	let t45;
+    	let line32;
+    	let t46;
+    	let line33;
+    	let t47;
+    	let line34;
+    	let t48;
+    	let line35;
+    	let t49;
+    	let line36;
+    	let t50;
+    	let line37;
+    	let t51;
+    	let line38;
+    	let t52;
+    	let line39;
+    	let t53;
+    	let line40;
+    	let t54;
+    	let line41;
+    	let t55;
+    	let line42;
+    	let t56;
+    	let line43;
+    	let t57;
+    	let line44;
+    	let t58;
+    	let line45;
+    	let t59;
+    	let line46;
+    	let t60;
+    	let line47;
+    	let t61;
+    	let line48;
+    	let t62;
+    	let line49;
+    	let t63;
+    	let line50;
+    	let t64;
+    	let line51;
+    	let t65;
+    	let line52;
+    	let t66;
+    	let line53;
+    	let t67;
+    	let line54;
+    	let t68;
+    	let line55;
+    	let t69;
+    	let line56;
+    	let t70;
+    	let line57;
+    	let t71;
+    	let line58;
+    	let t72;
+    	let line59;
+    	let t73;
+    	let line60;
+    	let t74;
+    	let line61;
+    	let t75;
+    	let line62;
+    	let t76;
+    	let line63;
+    	let t77;
+    	let line64;
+    	let t78;
+    	let line65;
+    	let t79;
+    	let line66;
+    	let t80;
+    	let line67;
+    	let t81;
+    	let line68;
+    	let t82;
+    	let line69;
+    	let t83;
+    	let line70;
+    	let t84;
+    	let line71;
+    	let t85;
+    	let line72;
+    	let t86;
+    	let line73;
+    	let t87;
+    	let line74;
+    	let t88;
+    	let line75;
+    	let t89;
+    	let g;
+    	let path3;
+    	let path4;
+    	let path5;
+    	let path6;
+    	let rect9;
+    	let rect10;
+    	let path7;
+    	let circle;
+    	let g_transform_value;
+    	let t90;
+    	let path8;
+    	let t91;
+    	let path9;
+    	let t92;
+    	let rect11;
+
+    	const block = {
+    		c: function create() {
+    			rect0 = svg_element("rect");
+    			t0 = space();
+    			rect1 = svg_element("rect");
+    			t1 = space();
+    			rect2 = svg_element("rect");
+    			t2 = space();
+    			path0 = svg_element("path");
+    			t3 = space();
+    			polyline = svg_element("polyline");
+    			t4 = space();
+    			rect3 = svg_element("rect");
+    			t5 = space();
+    			rect4 = svg_element("rect");
+    			t6 = space();
+    			rect5 = svg_element("rect");
+    			t7 = space();
+    			rect6 = svg_element("rect");
+    			t8 = space();
+    			rect7 = svg_element("rect");
+    			t9 = space();
+    			rect8 = svg_element("rect");
+    			t10 = space();
+    			line0 = svg_element("line");
+    			t11 = space();
+    			line1 = svg_element("line");
+    			t12 = space();
+    			line2 = svg_element("line");
+    			t13 = space();
+    			line3 = svg_element("line");
+    			t14 = space();
+    			line4 = svg_element("line");
+    			t15 = space();
+    			line5 = svg_element("line");
+    			t16 = space();
+    			line6 = svg_element("line");
+    			t17 = space();
+    			line7 = svg_element("line");
+    			t18 = space();
+    			line8 = svg_element("line");
+    			t19 = space();
+    			polygon = svg_element("polygon");
+    			t20 = space();
+    			line9 = svg_element("line");
+    			t21 = space();
+    			line10 = svg_element("line");
+    			t22 = space();
+    			line11 = svg_element("line");
+    			t23 = space();
+    			line12 = svg_element("line");
+    			t24 = space();
+    			line13 = svg_element("line");
+    			t25 = space();
+    			line14 = svg_element("line");
+    			t26 = space();
+    			line15 = svg_element("line");
+    			t27 = space();
+    			line16 = svg_element("line");
+    			t28 = space();
+    			line17 = svg_element("line");
+    			t29 = space();
+    			line18 = svg_element("line");
+    			t30 = space();
+    			line19 = svg_element("line");
+    			t31 = space();
+    			line20 = svg_element("line");
+    			t32 = space();
+    			line21 = svg_element("line");
+    			t33 = space();
+    			line22 = svg_element("line");
+    			t34 = space();
+    			line23 = svg_element("line");
+    			t35 = space();
+    			path1 = svg_element("path");
+    			t36 = space();
+    			line24 = svg_element("line");
+    			t37 = space();
+    			line25 = svg_element("line");
+    			t38 = space();
+    			path2 = svg_element("path");
+    			t39 = space();
+    			line26 = svg_element("line");
+    			t40 = space();
+    			line27 = svg_element("line");
+    			t41 = space();
+    			line28 = svg_element("line");
+    			t42 = space();
+    			line29 = svg_element("line");
+    			t43 = space();
+    			line30 = svg_element("line");
+    			t44 = space();
+    			line31 = svg_element("line");
+    			t45 = space();
+    			line32 = svg_element("line");
+    			t46 = space();
+    			line33 = svg_element("line");
+    			t47 = space();
+    			line34 = svg_element("line");
+    			t48 = space();
+    			line35 = svg_element("line");
+    			t49 = space();
+    			line36 = svg_element("line");
+    			t50 = space();
+    			line37 = svg_element("line");
+    			t51 = space();
+    			line38 = svg_element("line");
+    			t52 = space();
+    			line39 = svg_element("line");
+    			t53 = space();
+    			line40 = svg_element("line");
+    			t54 = space();
+    			line41 = svg_element("line");
+    			t55 = space();
+    			line42 = svg_element("line");
+    			t56 = space();
+    			line43 = svg_element("line");
+    			t57 = space();
+    			line44 = svg_element("line");
+    			t58 = space();
+    			line45 = svg_element("line");
+    			t59 = space();
+    			line46 = svg_element("line");
+    			t60 = space();
+    			line47 = svg_element("line");
+    			t61 = space();
+    			line48 = svg_element("line");
+    			t62 = space();
+    			line49 = svg_element("line");
+    			t63 = space();
+    			line50 = svg_element("line");
+    			t64 = space();
+    			line51 = svg_element("line");
+    			t65 = space();
+    			line52 = svg_element("line");
+    			t66 = space();
+    			line53 = svg_element("line");
+    			t67 = space();
+    			line54 = svg_element("line");
+    			t68 = space();
+    			line55 = svg_element("line");
+    			t69 = space();
+    			line56 = svg_element("line");
+    			t70 = space();
+    			line57 = svg_element("line");
+    			t71 = space();
+    			line58 = svg_element("line");
+    			t72 = space();
+    			line59 = svg_element("line");
+    			t73 = space();
+    			line60 = svg_element("line");
+    			t74 = space();
+    			line61 = svg_element("line");
+    			t75 = space();
+    			line62 = svg_element("line");
+    			t76 = space();
+    			line63 = svg_element("line");
+    			t77 = space();
+    			line64 = svg_element("line");
+    			t78 = space();
+    			line65 = svg_element("line");
+    			t79 = space();
+    			line66 = svg_element("line");
+    			t80 = space();
+    			line67 = svg_element("line");
+    			t81 = space();
+    			line68 = svg_element("line");
+    			t82 = space();
+    			line69 = svg_element("line");
+    			t83 = space();
+    			line70 = svg_element("line");
+    			t84 = space();
+    			line71 = svg_element("line");
+    			t85 = space();
+    			line72 = svg_element("line");
+    			t86 = space();
+    			line73 = svg_element("line");
+    			t87 = space();
+    			line74 = svg_element("line");
+    			t88 = space();
+    			line75 = svg_element("line");
+    			t89 = space();
+    			g = svg_element("g");
+    			path3 = svg_element("path");
+    			path4 = svg_element("path");
+    			path5 = svg_element("path");
+    			path6 = svg_element("path");
+    			rect9 = svg_element("rect");
+    			rect10 = svg_element("rect");
+    			path7 = svg_element("path");
+    			circle = svg_element("circle");
+    			t90 = space();
+    			path8 = svg_element("path");
+    			t91 = space();
+    			path9 = svg_element("path");
+    			t92 = space();
+    			rect11 = svg_element("rect");
+    			attr_dev(rect0, "id", "XMLID_5_");
+    			attr_dev(rect0, "x", "1218.94");
+    			attr_dev(rect0, "y", "2272.38");
+    			attr_dev(rect0, "transform", "matrix(-1 -4.491664e-11 4.491664e-11 -1 2613.8027 4689.6328)");
+    			attr_dev(rect0, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect0, "width", "175.92");
+    			attr_dev(rect0, "height", "144.88");
+    			add_location(rect0, file, 13, 0, 522);
+    			attr_dev(rect1, "id", "XMLID_6_");
+    			attr_dev(rect1, "x", "1272.41");
+    			attr_dev(rect1, "y", "1524.8");
+    			attr_dev(rect1, "transform", "matrix(-1 -4.499924e-11 4.499924e-11 -1 2617.2522 3797.1814)");
+    			attr_dev(rect1, "class", "st5 svelte-1mi792v");
+    			attr_dev(rect1, "width", "72.44");
+    			attr_dev(rect1, "height", "747.58");
+    			add_location(rect1, file, 15, 2, 689);
+    			attr_dev(rect2, "id", "XMLID_9_");
+    			attr_dev(rect2, "x", "1275.42");
+    			attr_dev(rect2, "y", "1465.7");
+    			attr_dev(rect2, "transform", "matrix(-1 -4.518842e-11 4.518842e-11 -1 2617.2522 2990.5002)");
+    			attr_dev(rect2, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect2, "width", "66.42");
+    			attr_dev(rect2, "height", "59.11");
+    			add_location(rect2, file, 17, 2, 853);
+    			attr_dev(path0, "id", "XMLID_12_");
+    			attr_dev(path0, "class", "st4 svelte-1mi792v");
+    			attr_dev(path0, "d", "M1275.42,1469.1l0.12-72.1h78.66c-0.03,0.17-0.06,0.35-0.09,0.52\n\t\tc-4.09,23.86-8.18,47.72-12.27,71.58");
+    			add_location(path0, file, 18, 1, 1013);
+    			attr_dev(polyline, "id", "XMLID_14_");
+    			attr_dev(polyline, "class", "st5 svelte-1mi792v");
+    			attr_dev(polyline, "points", "1335.8,1393.68 1316.07,1134 1300.84,1134 1281.11,1395.43 \t");
+    			add_location(polyline, file, 20, 1, 1154);
+    			attr_dev(rect3, "id", "XMLID_10_");
+    			attr_dev(rect3, "x", "1301.17");
+    			attr_dev(rect3, "y", "1112.42");
+    			attr_dev(rect3, "transform", "matrix(-1 -1.120874e-10 1.120874e-10 -1 2617.2351 2246.4202)");
+    			attr_dev(rect3, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect3, "width", "14.9");
+    			attr_dev(rect3, "height", "21.58");
+    			add_location(rect3, file, 22, 2, 1265);
+    			attr_dev(rect4, "id", "XMLID_11_");
+    			attr_dev(rect4, "x", "1258.82");
+    			attr_dev(rect4, "y", "1328.39");
+    			attr_dev(rect4, "transform", "matrix(-1 -4.490953e-11 4.490953e-11 -1 2614.929 2684.896)");
+    			attr_dev(rect4, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect4, "width", "97.29");
+    			attr_dev(rect4, "height", "28.12");
+    			add_location(rect4, file, 24, 2, 1429);
+    			attr_dev(rect5, "id", "XMLID_13_");
+    			attr_dev(rect5, "x", "885.86");
+    			attr_dev(rect5, "y", "1296.59");
+    			attr_dev(rect5, "transform", "matrix(-1 -4.491397e-11 4.491397e-11 -1 2144.6775 2653.1025)");
+    			attr_dev(rect5, "class", "st5 svelte-1mi792v");
+    			attr_dev(rect5, "width", "372.96");
+    			attr_dev(rect5, "height", "59.92");
+    			add_location(rect5, file, 26, 2, 1592);
+    			attr_dev(rect6, "id", "XMLID_15_");
+    			attr_dev(rect6, "x", "997.14");
+    			attr_dev(rect6, "y", "1356.51");
+    			attr_dev(rect6, "transform", "matrix(-1 -4.481183e-11 4.481183e-11 -1 2052.9656 2796.1731)");
+    			attr_dev(rect6, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect6, "width", "58.7");
+    			attr_dev(rect6, "height", "83.15");
+    			add_location(rect6, file, 28, 2, 1757);
+    			attr_dev(rect7, "id", "XMLID_16_");
+    			attr_dev(rect7, "x", "1916.7");
+    			attr_dev(rect7, "y", "1349.17");
+    			attr_dev(rect7, "transform", "matrix(-1 -4.483848e-11 4.483848e-11 -1 3876.1985 2725.2493)");
+    			attr_dev(rect7, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect7, "width", "42.8");
+    			attr_dev(rect7, "height", "26.9");
+    			add_location(rect7, file, 30, 2, 1920);
+    			attr_dev(rect8, "id", "XMLID_17_");
+    			attr_dev(rect8, "x", "1916.7");
+    			attr_dev(rect8, "y", "1532.6");
+    			attr_dev(rect8, "transform", rect8_transform_value = `matrix(-1 -4.488111e-11 4.488111e-11 -1 3876.1985 3118.999) translate(0, ${-/*t*/ ctx[0] * 760})`);
+    			attr_dev(rect8, "class", "st4 svelte-1mi792v");
+    			attr_dev(rect8, "width", "42.8");
+    			attr_dev(rect8, "height", "53.8");
+    			add_location(rect8, file, 32, 2, 2082);
+    			attr_dev(line0, "id", "XMLID_18_");
+    			attr_dev(line0, "class", "st5 svelte-1mi792v");
+    			attr_dev(line0, "x1", "1301.17");
+    			attr_dev(line0, "y1", "1121.11");
+    			attr_dev(line0, "x2", "958");
+    			attr_dev(line0, "y2", "1356.51");
+    			add_location(line0, file, 33, 1, 2267);
+    			attr_dev(line1, "id", "XMLID_19_");
+    			attr_dev(line1, "class", "st5 svelte-1mi792v");
+    			attr_dev(line1, "x1", "1316.07");
+    			attr_dev(line1, "y1", "1121.11");
+    			attr_dev(line1, "x2", "1743.06");
+    			attr_dev(line1, "y2", "1312.49");
+    			add_location(line1, file, 34, 1, 2351);
+    			attr_dev(line2, "id", "XMLID_24_");
+    			attr_dev(line2, "class", "st5 svelte-1mi792v");
+    			attr_dev(line2, "x1", "1994.05");
+    			attr_dev(line2, "y1", "1361.53");
+    			attr_dev(line2, "x2", "1951.54");
+    			attr_dev(line2, "y2", "1316.25");
+    			add_location(line2, file, 35, 1, 2439);
+    			attr_dev(line3, "id", "XMLID_25_");
+    			attr_dev(line3, "class", "st5 svelte-1mi792v");
+    			attr_dev(line3, "x1", "1951.54");
+    			attr_dev(line3, "y1", "1316.25");
+    			attr_dev(line3, "x2", "1923.47");
+    			attr_dev(line3, "y2", "1356.51");
+    			add_location(line3, file, 36, 1, 2527);
+    			attr_dev(line4, "id", "XMLID_26_");
+    			attr_dev(line4, "class", "st5 svelte-1mi792v");
+    			attr_dev(line4, "x1", "1923.47");
+    			attr_dev(line4, "y1", "1356.51");
+    			attr_dev(line4, "x2", "1883.37");
+    			attr_dev(line4, "y2", "1316.25");
+    			add_location(line4, file, 37, 1, 2615);
+    			attr_dev(line5, "id", "XMLID_27_");
+    			attr_dev(line5, "class", "st5 svelte-1mi792v");
+    			attr_dev(line5, "x1", "1883.37");
+    			attr_dev(line5, "y1", "1316.25");
+    			attr_dev(line5, "x2", "1861.72");
+    			attr_dev(line5, "y2", "1355.9");
+    			add_location(line5, file, 38, 1, 2703);
+    			attr_dev(line6, "id", "XMLID_28_");
+    			attr_dev(line6, "class", "st5 svelte-1mi792v");
+    			attr_dev(line6, "x1", "1861.72");
+    			attr_dev(line6, "y1", "1355.9");
+    			attr_dev(line6, "x2", "1829.66");
+    			attr_dev(line6, "y2", "1313.56");
+    			add_location(line6, file, 39, 1, 2790);
+    			attr_dev(line7, "id", "XMLID_29_");
+    			attr_dev(line7, "class", "st5 svelte-1mi792v");
+    			attr_dev(line7, "x1", "1829.66");
+    			attr_dev(line7, "y1", "1313.56");
+    			attr_dev(line7, "x2", "1804.78");
+    			attr_dev(line7, "y2", "1355.9");
+    			add_location(line7, file, 40, 1, 2877);
+    			attr_dev(line8, "id", "XMLID_30_");
+    			attr_dev(line8, "class", "st5 svelte-1mi792v");
+    			attr_dev(line8, "x1", "1804.78");
+    			attr_dev(line8, "y1", "1355.9");
+    			attr_dev(line8, "x2", "1773.51");
+    			attr_dev(line8, "y2", "1312.76");
+    			add_location(line8, file, 41, 1, 2964);
+    			attr_dev(polygon, "id", "XMLID_22_");
+    			attr_dev(polygon, "class", "st5 svelte-1mi792v");
+    			attr_dev(polygon, "points", "1363.98,1349.17 2049.99,1362.62 2022.92,1316.25 1398.18,1307.43 \t");
+    			add_location(polygon, file, 42, 1, 3051);
+    			attr_dev(line9, "id", "XMLID_23_");
+    			attr_dev(line9, "class", "st5 svelte-1mi792v");
+    			attr_dev(line9, "x1", "2022.92");
+    			attr_dev(line9, "y1", "1316.25");
+    			attr_dev(line9, "x2", "1994.05");
+    			attr_dev(line9, "y2", "1361.53");
+    			add_location(line9, file, 43, 1, 3165);
+    			attr_dev(line10, "id", "XMLID_20_");
+    			attr_dev(line10, "class", "st5 svelte-1mi792v");
+    			attr_dev(line10, "x1", "1773.51");
+    			attr_dev(line10, "y1", "1312.76");
+    			attr_dev(line10, "x2", "1747.43");
+    			attr_dev(line10, "y2", "1355.9");
+    			add_location(line10, file, 44, 1, 3253);
+    			attr_dev(line11, "id", "XMLID_21_");
+    			attr_dev(line11, "class", "st5 svelte-1mi792v");
+    			attr_dev(line11, "x1", "1747.43");
+    			attr_dev(line11, "y1", "1355.9");
+    			attr_dev(line11, "x2", "1720.91");
+    			attr_dev(line11, "y2", "1312.76");
+    			add_location(line11, file, 45, 1, 3340);
+    			attr_dev(line12, "id", "XMLID_31_");
+    			attr_dev(line12, "class", "st5 svelte-1mi792v");
+    			attr_dev(line12, "x1", "1720.91");
+    			attr_dev(line12, "y1", "1312.76");
+    			attr_dev(line12, "x2", "1692.68");
+    			attr_dev(line12, "y2", "1353.76");
+    			add_location(line12, file, 46, 1, 3427);
+    			attr_dev(line13, "id", "XMLID_32_");
+    			attr_dev(line13, "class", "st5 svelte-1mi792v");
+    			attr_dev(line13, "x1", "1692.68");
+    			attr_dev(line13, "y1", "1353.76");
+    			attr_dev(line13, "x2", "1663.6");
+    			attr_dev(line13, "y2", "1311.18");
+    			add_location(line13, file, 47, 1, 3515);
+    			attr_dev(line14, "id", "XMLID_33_");
+    			attr_dev(line14, "class", "st5 svelte-1mi792v");
+    			attr_dev(line14, "x1", "1663.6");
+    			attr_dev(line14, "y1", "1311.18");
+    			attr_dev(line14, "x2", "1634.08");
+    			attr_dev(line14, "y2", "1353.76");
+    			add_location(line14, file, 48, 1, 3602);
+    			attr_dev(line15, "id", "XMLID_34_");
+    			attr_dev(line15, "class", "st5 svelte-1mi792v");
+    			attr_dev(line15, "x1", "1634.08");
+    			attr_dev(line15, "y1", "1353.76");
+    			attr_dev(line15, "x2", "1605.41");
+    			attr_dev(line15, "y2", "1310.36");
+    			add_location(line15, file, 49, 1, 3689);
+    			attr_dev(line16, "id", "XMLID_35_");
+    			attr_dev(line16, "class", "st5 svelte-1mi792v");
+    			attr_dev(line16, "x1", "1605.41");
+    			attr_dev(line16, "y1", "1310.36");
+    			attr_dev(line16, "x2", "1574.59");
+    			attr_dev(line16, "y2", "1353.3");
+    			add_location(line16, file, 50, 1, 3777);
+    			attr_dev(line17, "id", "XMLID_36_");
+    			attr_dev(line17, "class", "st5 svelte-1mi792v");
+    			attr_dev(line17, "x1", "1574.59");
+    			attr_dev(line17, "y1", "1353.3");
+    			attr_dev(line17, "x2", "1554.52");
+    			attr_dev(line17, "y2", "1309.64");
+    			add_location(line17, file, 51, 1, 3864);
+    			attr_dev(line18, "id", "XMLID_37_");
+    			attr_dev(line18, "class", "st5 svelte-1mi792v");
+    			attr_dev(line18, "x1", "1554.52");
+    			attr_dev(line18, "y1", "1309.64");
+    			attr_dev(line18, "x2", "1529.56");
+    			attr_dev(line18, "y2", "1352.42");
+    			add_location(line18, file, 52, 1, 3951);
+    			attr_dev(line19, "id", "XMLID_38_");
+    			attr_dev(line19, "class", "st5 svelte-1mi792v");
+    			attr_dev(line19, "x1", "1529.56");
+    			attr_dev(line19, "y1", "1352.42");
+    			attr_dev(line19, "x2", "1501.91");
+    			attr_dev(line19, "y2", "1308.9");
+    			add_location(line19, file, 53, 1, 4039);
+    			attr_dev(line20, "id", "XMLID_39_");
+    			attr_dev(line20, "class", "st5 svelte-1mi792v");
+    			attr_dev(line20, "x1", "1501.91");
+    			attr_dev(line20, "y1", "1308.9");
+    			attr_dev(line20, "x2", "1476.66");
+    			attr_dev(line20, "y2", "1351.38");
+    			add_location(line20, file, 54, 1, 4126);
+    			attr_dev(line21, "id", "XMLID_40_");
+    			attr_dev(line21, "class", "st5 svelte-1mi792v");
+    			attr_dev(line21, "x1", "1476.66");
+    			attr_dev(line21, "y1", "1351.38");
+    			attr_dev(line21, "x2", "1454.01");
+    			attr_dev(line21, "y2", "1308.22");
+    			add_location(line21, file, 55, 1, 4213);
+    			attr_dev(line22, "id", "XMLID_41_");
+    			attr_dev(line22, "class", "st5 svelte-1mi792v");
+    			attr_dev(line22, "x1", "1454.01");
+    			attr_dev(line22, "y1", "1308.22");
+    			attr_dev(line22, "x2", "1426.62");
+    			attr_dev(line22, "y2", "1350.4");
+    			add_location(line22, file, 56, 1, 4301);
+    			attr_dev(line23, "id", "XMLID_42_");
+    			attr_dev(line23, "class", "st5 svelte-1mi792v");
+    			attr_dev(line23, "x1", "1426.62");
+    			attr_dev(line23, "y1", "1350.4");
+    			attr_dev(line23, "x2", "1398.18");
+    			attr_dev(line23, "y2", "1307.43");
+    			add_location(line23, file, 57, 1, 4388);
+    			attr_dev(path1, "id", "XMLID_43_");
+    			attr_dev(path1, "class", "st5 svelte-1mi792v");
+    			attr_dev(path1, "d", "M1398.18,1307.43l-34.2,41.74L1398.18,1307.43z");
+    			add_location(path1, file, 58, 1, 4475);
+    			attr_dev(line24, "id", "XMLID_45_");
+    			attr_dev(line24, "class", "st5 svelte-1mi792v");
+    			attr_dev(line24, "x1", "1945.96");
+    			attr_dev(line24, "y1", "1380");
+    			attr_dev(line24, "x2", "1945.96");
+    			attr_dev(line24, "y2", line24_y__value = 1535 + /*t*/ ctx[0] * 760);
+    			add_location(line24, file, 59, 1, 4561);
+    			attr_dev(line25, "id", "XMLID_44_");
+    			attr_dev(line25, "class", "st5 svelte-1mi792v");
+    			attr_dev(line25, "x1", "1929.96");
+    			attr_dev(line25, "y1", "1380");
+    			attr_dev(line25, "x2", "1929.96");
+    			attr_dev(line25, "y2", line25_y__value = 1535 + /*t*/ ctx[0] * 760);
+    			add_location(line25, file, 60, 1, 4653);
+    			attr_dev(path2, "id", "XMLID_46_");
+    			attr_dev(path2, "class", "st5 svelte-1mi792v");
+    			attr_dev(path2, "style", path2_style_value = `transform: translate3d(0, ${/*t*/ ctx[0] * 760}px, 0)`);
+    			attr_dev(path2, "d", "M1935.33,1585.95c-0.35,7.28-2.56,11.8-4.57,14.61c-2.19,3.07-4.59,4.74-5.3,8.58\n\t\tc-0.13,0.71-0.91,4.98,1.64,8.03c3.19,3.82,10.66,4.66,14.79,0.37c3.04-3.16,3.57-8.35,1.1-12.6");
+    			add_location(path2, file, 61, 1, 4745);
+    			attr_dev(line26, "id", "XMLID_47_");
+    			attr_dev(line26, "class", "st5 svelte-1mi792v");
+    			attr_dev(line26, "x1", "1256.96");
+    			attr_dev(line26, "y1", "1330");
+    			attr_dev(line26, "x2", "886.96");
+    			attr_dev(line26, "y2", "1330");
+    			add_location(line26, file, 63, 1, 5012);
+    			attr_dev(line27, "id", "XMLID_48_");
+    			attr_dev(line27, "class", "st5 svelte-1mi792v");
+    			attr_dev(line27, "x1", "1185.96");
+    			attr_dev(line27, "y1", "1299");
+    			attr_dev(line27, "x2", "1185.96");
+    			attr_dev(line27, "y2", "1359");
+    			add_location(line27, file, 64, 1, 5093);
+    			attr_dev(line28, "id", "XMLID_49_");
+    			attr_dev(line28, "class", "st5 svelte-1mi792v");
+    			attr_dev(line28, "x1", "1132.96");
+    			attr_dev(line28, "y1", "1299");
+    			attr_dev(line28, "x2", "1132.96");
+    			attr_dev(line28, "y2", "1357");
+    			add_location(line28, file, 65, 1, 5175);
+    			attr_dev(line29, "id", "XMLID_50_");
+    			attr_dev(line29, "class", "st5 svelte-1mi792v");
+    			attr_dev(line29, "x1", "1089.96");
+    			attr_dev(line29, "y1", "1299");
+    			attr_dev(line29, "x2", "1089.96");
+    			attr_dev(line29, "y2", "1357");
+    			add_location(line29, file, 66, 1, 5257);
+    			attr_dev(line30, "id", "XMLID_51_");
+    			attr_dev(line30, "class", "st5 svelte-1mi792v");
+    			attr_dev(line30, "x1", "1035.96");
+    			attr_dev(line30, "y1", "1299");
+    			attr_dev(line30, "x2", "1035.96");
+    			attr_dev(line30, "y2", "1364");
+    			add_location(line30, file, 67, 1, 5339);
+    			attr_dev(line31, "id", "XMLID_52_");
+    			attr_dev(line31, "class", "st5 svelte-1mi792v");
+    			attr_dev(line31, "x1", "982.96");
+    			attr_dev(line31, "y1", "1299");
+    			attr_dev(line31, "x2", "982.96");
+    			attr_dev(line31, "y2", "1357");
+    			add_location(line31, file, 68, 1, 5421);
+    			attr_dev(line32, "id", "XMLID_53_");
+    			attr_dev(line32, "class", "st5 svelte-1mi792v");
+    			attr_dev(line32, "x1", "933.96");
+    			attr_dev(line32, "y1", "1299");
+    			attr_dev(line32, "x2", "933.96");
+    			attr_dev(line32, "y2", "1359");
+    			add_location(line32, file, 69, 1, 5501);
+    			attr_dev(line33, "id", "XMLID_54_");
+    			attr_dev(line33, "class", "st5 svelte-1mi792v");
+    			attr_dev(line33, "x1", "1342.96");
+    			attr_dev(line33, "y1", "2254");
+    			attr_dev(line33, "x2", "1272.96");
+    			attr_dev(line33, "y2", "2254");
+    			add_location(line33, file, 70, 1, 5581);
+    			attr_dev(line34, "id", "XMLID_55_");
+    			attr_dev(line34, "class", "st5 svelte-1mi792v");
+    			attr_dev(line34, "x1", "1345.45");
+    			attr_dev(line34, "y1", "2246.69");
+    			attr_dev(line34, "x2", "1272.41");
+    			attr_dev(line34, "y2", "2211.73");
+    			add_location(line34, file, 71, 1, 5663);
+    			attr_dev(line35, "id", "XMLID_56_");
+    			attr_dev(line35, "class", "st5 svelte-1mi792v");
+    			attr_dev(line35, "x1", "1272.96");
+    			attr_dev(line35, "y1", "2217");
+    			attr_dev(line35, "x2", "1342.96");
+    			attr_dev(line35, "y2", "2217");
+    			add_location(line35, file, 72, 1, 5751);
+    			attr_dev(line36, "id", "XMLID_57_");
+    			attr_dev(line36, "class", "st5 svelte-1mi792v");
+    			attr_dev(line36, "x1", "1272.41");
+    			attr_dev(line36, "y1", "2211.73");
+    			attr_dev(line36, "x2", "1344.84");
+    			attr_dev(line36, "y2", "2173.44");
+    			add_location(line36, file, 73, 1, 5833);
+    			attr_dev(line37, "id", "XMLID_58_");
+    			attr_dev(line37, "class", "st5 svelte-1mi792v");
+    			attr_dev(line37, "x1", "1342.96");
+    			attr_dev(line37, "y1", "2185");
+    			attr_dev(line37, "x2", "1272.96");
+    			attr_dev(line37, "y2", "2185");
+    			add_location(line37, file, 74, 1, 5921);
+    			attr_dev(line38, "id", "XMLID_59_");
+    			attr_dev(line38, "class", "st5 svelte-1mi792v");
+    			attr_dev(line38, "x1", "1345.45");
+    			attr_dev(line38, "y1", "2176.78");
+    			attr_dev(line38, "x2", "1272.41");
+    			attr_dev(line38, "y2", "2130.21");
+    			add_location(line38, file, 75, 1, 6003);
+    			attr_dev(line39, "id", "XMLID_60_");
+    			attr_dev(line39, "class", "st5 svelte-1mi792v");
+    			attr_dev(line39, "x1", "1272.96");
+    			attr_dev(line39, "y1", "2142");
+    			attr_dev(line39, "x2", "1342.96");
+    			attr_dev(line39, "y2", "2142");
+    			add_location(line39, file, 76, 1, 6091);
+    			attr_dev(line40, "id", "XMLID_61_");
+    			attr_dev(line40, "class", "st5 svelte-1mi792v");
+    			attr_dev(line40, "x1", "1275.54");
+    			attr_dev(line40, "y1", "2133.08");
+    			attr_dev(line40, "x2", "1344.84");
+    			attr_dev(line40, "y2", "2091.92");
+    			add_location(line40, file, 77, 1, 6173);
+    			attr_dev(line41, "id", "XMLID_62_");
+    			attr_dev(line41, "class", "st5 svelte-1mi792v");
+    			attr_dev(line41, "x1", "1342.96");
+    			attr_dev(line41, "y1", "2094");
+    			attr_dev(line41, "x2", "1272.96");
+    			attr_dev(line41, "y2", "2094");
+    			add_location(line41, file, 78, 1, 6261);
+    			attr_dev(line42, "id", "XMLID_63_");
+    			attr_dev(line42, "class", "st5 svelte-1mi792v");
+    			attr_dev(line42, "x1", "1345.45");
+    			attr_dev(line42, "y1", "2089.38");
+    			attr_dev(line42, "x2", "1272.41");
+    			attr_dev(line42, "y2", "2051.79");
+    			add_location(line42, file, 79, 1, 6343);
+    			attr_dev(line43, "id", "XMLID_64_");
+    			attr_dev(line43, "class", "st5 svelte-1mi792v");
+    			attr_dev(line43, "x1", "1272.96");
+    			attr_dev(line43, "y1", "2061");
+    			attr_dev(line43, "x2", "1342.96");
+    			attr_dev(line43, "y2", "2061");
+    			add_location(line43, file, 80, 1, 6431);
+    			attr_dev(line44, "id", "XMLID_65_");
+    			attr_dev(line44, "class", "st5 svelte-1mi792v");
+    			attr_dev(line44, "x1", "1275.54");
+    			attr_dev(line44, "y1", "2054.42");
+    			attr_dev(line44, "x2", "1345.45");
+    			attr_dev(line44, "y2", "2009.18");
+    			add_location(line44, file, 81, 1, 6513);
+    			attr_dev(line45, "id", "XMLID_66_");
+    			attr_dev(line45, "class", "st5 svelte-1mi792v");
+    			attr_dev(line45, "x1", "1342.96");
+    			attr_dev(line45, "y1", "2019");
+    			attr_dev(line45, "x2", "1272.96");
+    			attr_dev(line45, "y2", "2019");
+    			add_location(line45, file, 82, 1, 6601);
+    			attr_dev(line46, "id", "XMLID_67_");
+    			attr_dev(line46, "class", "st5 svelte-1mi792v");
+    			attr_dev(line46, "x1", "1345.45");
+    			attr_dev(line46, "y1", "2010.72");
+    			attr_dev(line46, "x2", "1272.41");
+    			attr_dev(line46, "y2", "1968.42");
+    			add_location(line46, file, 83, 1, 6683);
+    			attr_dev(line47, "id", "XMLID_68_");
+    			attr_dev(line47, "class", "st5 svelte-1mi792v");
+    			attr_dev(line47, "x1", "1272.96");
+    			attr_dev(line47, "y1", "1976");
+    			attr_dev(line47, "x2", "1342.96");
+    			attr_dev(line47, "y2", "1976");
+    			add_location(line47, file, 84, 1, 6771);
+    			attr_dev(line48, "id", "XMLID_69_");
+    			attr_dev(line48, "class", "st5 svelte-1mi792v");
+    			attr_dev(line48, "x1", "1275.54");
+    			attr_dev(line48, "y1", "1967.02");
+    			attr_dev(line48, "x2", "1344.84");
+    			attr_dev(line48, "y2", "1929.51");
+    			add_location(line48, file, 85, 1, 6853);
+    			attr_dev(line49, "id", "XMLID_70_");
+    			attr_dev(line49, "class", "st5 svelte-1mi792v");
+    			attr_dev(line49, "x1", "1342.96");
+    			attr_dev(line49, "y1", "1938");
+    			attr_dev(line49, "x2", "1272.96");
+    			attr_dev(line49, "y2", "1938");
+    			add_location(line49, file, 86, 1, 6941);
+    			attr_dev(line50, "id", "XMLID_71_");
+    			attr_dev(line50, "class", "st5 svelte-1mi792v");
+    			attr_dev(line50, "x1", "1345.45");
+    			attr_dev(line50, "y1", "1932.06");
+    			attr_dev(line50, "x2", "1272.41");
+    			attr_dev(line50, "y2", "1890.61");
+    			add_location(line50, file, 87, 1, 7023);
+    			attr_dev(line51, "id", "XMLID_72_");
+    			attr_dev(line51, "class", "st5 svelte-1mi792v");
+    			attr_dev(line51, "x1", "1272.96");
+    			attr_dev(line51, "y1", "1895");
+    			attr_dev(line51, "x2", "1342.96");
+    			attr_dev(line51, "y2", "1895");
+    			add_location(line51, file, 88, 1, 7111);
+    			attr_dev(line52, "id", "XMLID_73_");
+    			attr_dev(line52, "class", "st5 svelte-1mi792v");
+    			attr_dev(line52, "x1", "1275.54");
+    			attr_dev(line52, "y1", "1888.37");
+    			attr_dev(line52, "x2", "1344.84");
+    			attr_dev(line52, "y2", "1849.85");
+    			add_location(line52, file, 89, 1, 7193);
+    			attr_dev(line53, "id", "XMLID_74_");
+    			attr_dev(line53, "class", "st5 svelte-1mi792v");
+    			attr_dev(line53, "x1", "1342.96");
+    			attr_dev(line53, "y1", "1858");
+    			attr_dev(line53, "x2", "1272.96");
+    			attr_dev(line53, "y2", "1858");
+    			add_location(line53, file, 90, 1, 7281);
+    			attr_dev(line54, "id", "XMLID_75_");
+    			attr_dev(line54, "class", "st5 svelte-1mi792v");
+    			attr_dev(line54, "x1", "1345.45");
+    			attr_dev(line54, "y1", "1853.41");
+    			attr_dev(line54, "x2", "1272.41");
+    			attr_dev(line54, "y2", "1809.71");
+    			add_location(line54, file, 91, 1, 7363);
+    			attr_dev(line55, "id", "XMLID_76_");
+    			attr_dev(line55, "class", "st5 svelte-1mi792v");
+    			attr_dev(line55, "x1", "1272.96");
+    			attr_dev(line55, "y1", "1815");
+    			attr_dev(line55, "x2", "1342.96");
+    			attr_dev(line55, "y2", "1815");
+    			add_location(line55, file, 92, 1, 7451);
+    			attr_dev(line56, "id", "XMLID_77_");
+    			attr_dev(line56, "class", "st5 svelte-1mi792v");
+    			attr_dev(line56, "x1", "1275.54");
+    			attr_dev(line56, "y1", "1809.71");
+    			attr_dev(line56, "x2", "1341.84");
+    			attr_dev(line56, "y2", "1767.72");
+    			add_location(line56, file, 93, 1, 7533);
+    			attr_dev(line57, "id", "XMLID_78_");
+    			attr_dev(line57, "class", "st5 svelte-1mi792v");
+    			attr_dev(line57, "x1", "1342.96");
+    			attr_dev(line57, "y1", "1772");
+    			attr_dev(line57, "x2", "1272.96");
+    			attr_dev(line57, "y2", "1772");
+    			add_location(line57, file, 94, 1, 7621);
+    			attr_dev(line58, "id", "XMLID_79_");
+    			attr_dev(line58, "class", "st5 svelte-1mi792v");
+    			attr_dev(line58, "x1", "1345.45");
+    			attr_dev(line58, "y1", "1766.01");
+    			attr_dev(line58, "x2", "1272.41");
+    			attr_dev(line58, "y2", "1725.73");
+    			add_location(line58, file, 95, 1, 7703);
+    			attr_dev(line59, "id", "XMLID_80_");
+    			attr_dev(line59, "class", "st5 svelte-1mi792v");
+    			attr_dev(line59, "x1", "1272.96");
+    			attr_dev(line59, "y1", "1729");
+    			attr_dev(line59, "x2", "1342.96");
+    			attr_dev(line59, "y2", "1729");
+    			add_location(line59, file, 96, 1, 7791);
+    			attr_dev(line60, "id", "XMLID_81_");
+    			attr_dev(line60, "class", "st5 svelte-1mi792v");
+    			attr_dev(line60, "x1", "1275.54");
+    			attr_dev(line60, "y1", "1722.31");
+    			attr_dev(line60, "x2", "1341.84");
+    			attr_dev(line60, "y2", "1688.06");
+    			add_location(line60, file, 97, 1, 7873);
+    			attr_dev(line61, "id", "XMLID_82_");
+    			attr_dev(line61, "class", "st5 svelte-1mi792v");
+    			attr_dev(line61, "x1", "1342.96");
+    			attr_dev(line61, "y1", "1691");
+    			attr_dev(line61, "x2", "1272.96");
+    			attr_dev(line61, "y2", "1691");
+    			add_location(line61, file, 98, 1, 7961);
+    			attr_dev(line62, "id", "XMLID_83_");
+    			attr_dev(line62, "class", "st5 svelte-1mi792v");
+    			attr_dev(line62, "x1", "1345.45");
+    			attr_dev(line62, "y1", "1687.35");
+    			attr_dev(line62, "x2", "1272.41");
+    			attr_dev(line62, "y2", "1647.3");
+    			add_location(line62, file, 99, 1, 8043);
+    			attr_dev(line63, "id", "XMLID_84_");
+    			attr_dev(line63, "class", "st5 svelte-1mi792v");
+    			attr_dev(line63, "x1", "1272.96");
+    			attr_dev(line63, "y1", "1649");
+    			attr_dev(line63, "x2", "1342.96");
+    			attr_dev(line63, "y2", "1649");
+    			add_location(line63, file, 100, 1, 8130);
+    			attr_dev(line64, "id", "XMLID_85_");
+    			attr_dev(line64, "class", "st5 svelte-1mi792v");
+    			attr_dev(line64, "x1", "1275.54");
+    			attr_dev(line64, "y1", "1643.65");
+    			attr_dev(line64, "x2", "1344.84");
+    			attr_dev(line64, "y2", "1604.69");
+    			add_location(line64, file, 101, 1, 8212);
+    			attr_dev(line65, "id", "XMLID_86_");
+    			attr_dev(line65, "class", "st5 svelte-1mi792v");
+    			attr_dev(line65, "x1", "1342.96");
+    			attr_dev(line65, "y1", "1616");
+    			attr_dev(line65, "x2", "1272.96");
+    			attr_dev(line65, "y2", "1616");
+    			add_location(line65, file, 102, 1, 8300);
+    			attr_dev(line66, "id", "XMLID_88_");
+    			attr_dev(line66, "class", "st5 svelte-1mi792v");
+    			attr_dev(line66, "x1", "1345.45");
+    			attr_dev(line66, "y1", "1608.69");
+    			attr_dev(line66, "x2", "1272.41");
+    			attr_dev(line66, "y2", "1567.02");
+    			add_location(line66, file, 103, 1, 8382);
+    			attr_dev(line67, "id", "XMLID_89_");
+    			attr_dev(line67, "class", "st5 svelte-1mi792v");
+    			attr_dev(line67, "x1", "1272.96");
+    			attr_dev(line67, "y1", "1574");
+    			attr_dev(line67, "x2", "1342.96");
+    			attr_dev(line67, "y2", "1574");
+    			add_location(line67, file, 104, 1, 8470);
+    			attr_dev(line68, "id", "XMLID_90_");
+    			attr_dev(line68, "class", "st5 svelte-1mi792v");
+    			attr_dev(line68, "x1", "1275.54");
+    			attr_dev(line68, "y1", "1565");
+    			attr_dev(line68, "x2", "1344.84");
+    			attr_dev(line68, "y2", "1524.8");
+    			add_location(line68, file, 105, 1, 8552);
+    			attr_dev(line69, "id", "XMLID_91_");
+    			attr_dev(line69, "class", "st5 svelte-1mi792v");
+    			attr_dev(line69, "x1", "1281.11");
+    			attr_dev(line69, "y1", "1390.94");
+    			attr_dev(line69, "x2", "1335.8");
+    			attr_dev(line69, "y2", "1349.17");
+    			add_location(line69, file, 106, 1, 8636);
+    			attr_dev(line70, "id", "XMLID_92_");
+    			attr_dev(line70, "class", "st5 svelte-1mi792v");
+    			attr_dev(line70, "x1", "1335.8");
+    			attr_dev(line70, "y1", "1349.17");
+    			attr_dev(line70, "x2", "1288.19");
+    			attr_dev(line70, "y2", "1296.59");
+    			add_location(line70, file, 107, 1, 8723);
+    			attr_dev(line71, "id", "XMLID_93_");
+    			attr_dev(line71, "class", "st5 svelte-1mi792v");
+    			attr_dev(line71, "x1", "1288.19");
+    			attr_dev(line71, "y1", "1296.59");
+    			attr_dev(line71, "x2", "1325.37");
+    			attr_dev(line71, "y2", "1251.89");
+    			add_location(line71, file, 108, 1, 8810);
+    			attr_dev(line72, "id", "XMLID_94_");
+    			attr_dev(line72, "class", "st5 svelte-1mi792v");
+    			attr_dev(line72, "x1", "1325.37");
+    			attr_dev(line72, "y1", "1251.89");
+    			attr_dev(line72, "x2", "1294.35");
+    			attr_dev(line72, "y2", "1214.46");
+    			add_location(line72, file, 109, 1, 8898);
+    			attr_dev(line73, "id", "XMLID_95_");
+    			attr_dev(line73, "class", "st5 svelte-1mi792v");
+    			attr_dev(line73, "x1", "1294.35");
+    			attr_dev(line73, "y1", "1214.46");
+    			attr_dev(line73, "x2", "1320.64");
+    			attr_dev(line73, "y2", "1188.86");
+    			add_location(line73, file, 110, 1, 8986);
+    			attr_dev(line74, "id", "XMLID_96_");
+    			attr_dev(line74, "class", "st5 svelte-1mi792v");
+    			attr_dev(line74, "x1", "1320.64");
+    			attr_dev(line74, "y1", "1188.86");
+    			attr_dev(line74, "x2", "1298.13");
+    			attr_dev(line74, "y2", "1164.09");
+    			add_location(line74, file, 111, 1, 9074);
+    			attr_dev(line75, "id", "XMLID_97_");
+    			attr_dev(line75, "class", "st5 svelte-1mi792v");
+    			attr_dev(line75, "x1", "1298.13");
+    			attr_dev(line75, "y1", "1164.09");
+    			attr_dev(line75, "x2", "1317.22");
+    			attr_dev(line75, "y2", "1143.39");
+    			add_location(line75, file, 112, 1, 9162);
+    			attr_dev(path3, "id", "XMLID_106_");
+    			attr_dev(path3, "class", "st6 svelte-1mi792v");
+    			attr_dev(path3, "d", "M3520.56,613.63");
+    			add_location(path3, file, 114, 2, 9298);
+    			attr_dev(path4, "id", "XMLID_101_");
+    			attr_dev(path4, "class", "st7 svelte-1mi792v");
+    			attr_dev(path4, "d", "M2995.73,795.65c86.01-32.49,172.06-64.94,258.14-97.34c86.76-32.66,173.53-65.27,260.3-97.82\n\t\t\tc0.03-0.02,0.05-0.03,0.08-0.05c-4.13-10.57-8.29-21.14-12.42-31.71c-189.68,71.67-379.36,143.34-569.04,215.01\n\t\t\tc0.07,0.02,0.13,0.03,0.2,0.05c20.73,4.02,41.46,8.03,62.19,12.05C2995.36,795.78,2995.55,795.71,2995.73,795.65z");
+    			add_location(path4, file, 115, 2, 9356);
+    			attr_dev(path5, "id", "XMLID_98_");
+    			attr_dev(path5, "class", "st7 svelte-1mi792v");
+    			attr_dev(path5, "d", "M3545.91,675.81c-1.26,11.69-5.11,32.9-18.89,55.22c-15.69,25.41-36.07,39.04-46.5,45.05\n\t\t\tc-90.75,34.98-181.51,69.96-272.26,104.95c-0.12-0.02-0.24-0.05-0.37-0.07c-13.97-3.11-46.85-12.45-75.57-41.74\n\t\t\tc-21.22-21.64-30.92-44.74-35.34-57.95c140.87-55.6,281.75-111.19,422.62-166.79c0.35-0.13,0.71-0.26,1.06-0.39\n\t\t\tc8.46,20.87,16.91,41.75,25.37,62.62");
+    			add_location(path5, file, 118, 2, 9713);
+    			attr_dev(path6, "id", "XMLID_103_");
+    			attr_dev(path6, "class", "st7 svelte-1mi792v");
+    			attr_dev(path6, "d", "M3040.48,804.51l41.16-15.58c4.75,13.64,14.68,36.31,35.34,57.95\n\t\t\tc27.59,28.9,58.86,39.75,73.5,43.82l-105.08,38.03L3040.48,804.51z");
+    			add_location(path6, file, 122, 2, 10101);
+    			attr_dev(rect9, "id", "XMLID_99_");
+    			attr_dev(rect9, "x", "3035.1");
+    			attr_dev(rect9, "y", "833.77");
+    			attr_dev(rect9, "transform", "matrix(0.9374 -0.3482 0.3482 0.9374 -112.3799 1114.1121)");
+    			attr_dev(rect9, "class", "st7 svelte-1mi792v");
+    			attr_dev(rect9, "width", "16.8");
+    			attr_dev(rect9, "height", "71.89");
+    			add_location(rect9, file, 125, 3, 10278);
+    			attr_dev(rect10, "id", "XMLID_100_");
+    			attr_dev(rect10, "x", "2998.8");
+    			attr_dev(rect10, "y", "834.37");
+    			attr_dev(rect10, "transform", "matrix(0.9374 -0.3482 0.3482 0.9374 -118.656 1103.5922)");
+    			attr_dev(rect10, "class", "st7 svelte-1mi792v");
+    			attr_dev(rect10, "width", "24.6");
+    			attr_dev(rect10, "height", "95.1");
+    			add_location(rect10, file, 127, 3, 10438);
+    			attr_dev(path7, "id", "XMLID_104_");
+    			attr_dev(path7, "class", "st7 svelte-1mi792v");
+    			attr_dev(path7, "d", "M3360.85,819.49l-70.71,25.18l8.19,23c12.33-4.39,24.66-8.78,36.99-13.17\n\t\t\tc11.24-4,22.48-8,33.72-12.01C3366.31,834.83,3363.58,827.16,3360.85,819.49z");
+    			add_location(path7, file, 128, 2, 10593);
+    			attr_dev(circle, "id", "XMLID_156_");
+    			attr_dev(circle, "class", "st9 svelte-1mi792v");
+    			attr_dev(circle, "cx", "3140");
+    			attr_dev(circle, "cy", "802.38");
+    			attr_dev(circle, "r", "9.83");
+    			add_location(circle, file, 130, 2, 10784);
+    			attr_dev(g, "transform", g_transform_value = `rotate(${/*t*/ ctx[0] * -45} 3320 850)`);
+    			add_location(g, file, 113, 1, 9250);
+    			attr_dev(path8, "id", "XMLID_105_");
+    			attr_dev(path8, "class", "st7 svelte-1mi792v");
+    			attr_dev(path8, "d", "M3627.24,1023.11h-43.31c0-24.57,0-49.15,0-73.72c0-24.31,0-48.63,0-72.94\n\t\t\tc14.44,0,28.87,0,43.31,0V1023.11z");
+    			add_location(path8, file, 133, 1, 10862);
+    			attr_dev(path9, "id", "XMLID_107_");
+    			attr_dev(path9, "class", "st8 svelte-1mi792v");
+    			attr_dev(path9, "d", "M 3324.62 831.62 C 3338.9 863.33 3345.67 880.47 3355.57 900.51 C 3365.3 920.2 3370.21 930.03 3375.75 936.21 C 3392.17 954.52 3417.6 956.55 3480.3 955.79 C 3513.17 955.39 3551.17 954.29 3593.48 951.89");
+    			add_location(path9, file, 135, 1, 11012);
+    			attr_dev(rect11, "id", "XMLID_155_");
+    			attr_dev(rect11, "x", "3627.24");
+    			attr_dev(rect11, "y", "747.55");
+    			attr_dev(rect11, "class", "st7 svelte-1mi792v");
+    			attr_dev(rect11, "width", "134.89");
+    			attr_dev(rect11, "height", "1730.13");
+    			add_location(rect11, file, 136, 1, 11253);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, rect0, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, rect1, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, rect2, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, path0, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, polyline, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, rect3, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, rect4, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, rect5, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, rect6, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, rect7, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, rect8, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, line0, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, line1, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, line2, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, line3, anchor);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, line4, anchor);
+    			insert_dev(target, t15, anchor);
+    			insert_dev(target, line5, anchor);
+    			insert_dev(target, t16, anchor);
+    			insert_dev(target, line6, anchor);
+    			insert_dev(target, t17, anchor);
+    			insert_dev(target, line7, anchor);
+    			insert_dev(target, t18, anchor);
+    			insert_dev(target, line8, anchor);
+    			insert_dev(target, t19, anchor);
+    			insert_dev(target, polygon, anchor);
+    			insert_dev(target, t20, anchor);
+    			insert_dev(target, line9, anchor);
+    			insert_dev(target, t21, anchor);
+    			insert_dev(target, line10, anchor);
+    			insert_dev(target, t22, anchor);
+    			insert_dev(target, line11, anchor);
+    			insert_dev(target, t23, anchor);
+    			insert_dev(target, line12, anchor);
+    			insert_dev(target, t24, anchor);
+    			insert_dev(target, line13, anchor);
+    			insert_dev(target, t25, anchor);
+    			insert_dev(target, line14, anchor);
+    			insert_dev(target, t26, anchor);
+    			insert_dev(target, line15, anchor);
+    			insert_dev(target, t27, anchor);
+    			insert_dev(target, line16, anchor);
+    			insert_dev(target, t28, anchor);
+    			insert_dev(target, line17, anchor);
+    			insert_dev(target, t29, anchor);
+    			insert_dev(target, line18, anchor);
+    			insert_dev(target, t30, anchor);
+    			insert_dev(target, line19, anchor);
+    			insert_dev(target, t31, anchor);
+    			insert_dev(target, line20, anchor);
+    			insert_dev(target, t32, anchor);
+    			insert_dev(target, line21, anchor);
+    			insert_dev(target, t33, anchor);
+    			insert_dev(target, line22, anchor);
+    			insert_dev(target, t34, anchor);
+    			insert_dev(target, line23, anchor);
+    			insert_dev(target, t35, anchor);
+    			insert_dev(target, path1, anchor);
+    			insert_dev(target, t36, anchor);
+    			insert_dev(target, line24, anchor);
+    			insert_dev(target, t37, anchor);
+    			insert_dev(target, line25, anchor);
+    			insert_dev(target, t38, anchor);
+    			insert_dev(target, path2, anchor);
+    			insert_dev(target, t39, anchor);
+    			insert_dev(target, line26, anchor);
+    			insert_dev(target, t40, anchor);
+    			insert_dev(target, line27, anchor);
+    			insert_dev(target, t41, anchor);
+    			insert_dev(target, line28, anchor);
+    			insert_dev(target, t42, anchor);
+    			insert_dev(target, line29, anchor);
+    			insert_dev(target, t43, anchor);
+    			insert_dev(target, line30, anchor);
+    			insert_dev(target, t44, anchor);
+    			insert_dev(target, line31, anchor);
+    			insert_dev(target, t45, anchor);
+    			insert_dev(target, line32, anchor);
+    			insert_dev(target, t46, anchor);
+    			insert_dev(target, line33, anchor);
+    			insert_dev(target, t47, anchor);
+    			insert_dev(target, line34, anchor);
+    			insert_dev(target, t48, anchor);
+    			insert_dev(target, line35, anchor);
+    			insert_dev(target, t49, anchor);
+    			insert_dev(target, line36, anchor);
+    			insert_dev(target, t50, anchor);
+    			insert_dev(target, line37, anchor);
+    			insert_dev(target, t51, anchor);
+    			insert_dev(target, line38, anchor);
+    			insert_dev(target, t52, anchor);
+    			insert_dev(target, line39, anchor);
+    			insert_dev(target, t53, anchor);
+    			insert_dev(target, line40, anchor);
+    			insert_dev(target, t54, anchor);
+    			insert_dev(target, line41, anchor);
+    			insert_dev(target, t55, anchor);
+    			insert_dev(target, line42, anchor);
+    			insert_dev(target, t56, anchor);
+    			insert_dev(target, line43, anchor);
+    			insert_dev(target, t57, anchor);
+    			insert_dev(target, line44, anchor);
+    			insert_dev(target, t58, anchor);
+    			insert_dev(target, line45, anchor);
+    			insert_dev(target, t59, anchor);
+    			insert_dev(target, line46, anchor);
+    			insert_dev(target, t60, anchor);
+    			insert_dev(target, line47, anchor);
+    			insert_dev(target, t61, anchor);
+    			insert_dev(target, line48, anchor);
+    			insert_dev(target, t62, anchor);
+    			insert_dev(target, line49, anchor);
+    			insert_dev(target, t63, anchor);
+    			insert_dev(target, line50, anchor);
+    			insert_dev(target, t64, anchor);
+    			insert_dev(target, line51, anchor);
+    			insert_dev(target, t65, anchor);
+    			insert_dev(target, line52, anchor);
+    			insert_dev(target, t66, anchor);
+    			insert_dev(target, line53, anchor);
+    			insert_dev(target, t67, anchor);
+    			insert_dev(target, line54, anchor);
+    			insert_dev(target, t68, anchor);
+    			insert_dev(target, line55, anchor);
+    			insert_dev(target, t69, anchor);
+    			insert_dev(target, line56, anchor);
+    			insert_dev(target, t70, anchor);
+    			insert_dev(target, line57, anchor);
+    			insert_dev(target, t71, anchor);
+    			insert_dev(target, line58, anchor);
+    			insert_dev(target, t72, anchor);
+    			insert_dev(target, line59, anchor);
+    			insert_dev(target, t73, anchor);
+    			insert_dev(target, line60, anchor);
+    			insert_dev(target, t74, anchor);
+    			insert_dev(target, line61, anchor);
+    			insert_dev(target, t75, anchor);
+    			insert_dev(target, line62, anchor);
+    			insert_dev(target, t76, anchor);
+    			insert_dev(target, line63, anchor);
+    			insert_dev(target, t77, anchor);
+    			insert_dev(target, line64, anchor);
+    			insert_dev(target, t78, anchor);
+    			insert_dev(target, line65, anchor);
+    			insert_dev(target, t79, anchor);
+    			insert_dev(target, line66, anchor);
+    			insert_dev(target, t80, anchor);
+    			insert_dev(target, line67, anchor);
+    			insert_dev(target, t81, anchor);
+    			insert_dev(target, line68, anchor);
+    			insert_dev(target, t82, anchor);
+    			insert_dev(target, line69, anchor);
+    			insert_dev(target, t83, anchor);
+    			insert_dev(target, line70, anchor);
+    			insert_dev(target, t84, anchor);
+    			insert_dev(target, line71, anchor);
+    			insert_dev(target, t85, anchor);
+    			insert_dev(target, line72, anchor);
+    			insert_dev(target, t86, anchor);
+    			insert_dev(target, line73, anchor);
+    			insert_dev(target, t87, anchor);
+    			insert_dev(target, line74, anchor);
+    			insert_dev(target, t88, anchor);
+    			insert_dev(target, line75, anchor);
+    			insert_dev(target, t89, anchor);
+    			insert_dev(target, g, anchor);
+    			append_dev(g, path3);
+    			append_dev(g, path4);
+    			append_dev(g, path5);
+    			append_dev(g, path6);
+    			append_dev(g, rect9);
+    			append_dev(g, rect10);
+    			append_dev(g, path7);
+    			append_dev(g, circle);
+    			insert_dev(target, t90, anchor);
+    			insert_dev(target, path8, anchor);
+    			insert_dev(target, t91, anchor);
+    			insert_dev(target, path9, anchor);
+    			insert_dev(target, t92, anchor);
+    			insert_dev(target, rect11, anchor);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*t*/ 1 && rect8_transform_value !== (rect8_transform_value = `matrix(-1 -4.488111e-11 4.488111e-11 -1 3876.1985 3118.999) translate(0, ${-/*t*/ ctx[0] * 760})`)) {
+    				attr_dev(rect8, "transform", rect8_transform_value);
+    			}
+
+    			if (dirty & /*t*/ 1 && line24_y__value !== (line24_y__value = 1535 + /*t*/ ctx[0] * 760)) {
+    				attr_dev(line24, "y2", line24_y__value);
+    			}
+
+    			if (dirty & /*t*/ 1 && line25_y__value !== (line25_y__value = 1535 + /*t*/ ctx[0] * 760)) {
+    				attr_dev(line25, "y2", line25_y__value);
+    			}
+
+    			if (dirty & /*t*/ 1 && path2_style_value !== (path2_style_value = `transform: translate3d(0, ${/*t*/ ctx[0] * 760}px, 0)`)) {
+    				attr_dev(path2, "style", path2_style_value);
+    			}
+
+    			if (dirty & /*t*/ 1 && g_transform_value !== (g_transform_value = `rotate(${/*t*/ ctx[0] * -45} 3320 850)`)) {
+    				attr_dev(g, "transform", g_transform_value);
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(rect0);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(rect1);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(rect2);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(path0);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(polyline);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(rect3);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(rect4);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(rect5);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(rect6);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(rect7);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(rect8);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(line0);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(line1);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(line2);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(line3);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(line4);
+    			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(line5);
+    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(line6);
+    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(line7);
+    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(line8);
+    			if (detaching) detach_dev(t19);
+    			if (detaching) detach_dev(polygon);
+    			if (detaching) detach_dev(t20);
+    			if (detaching) detach_dev(line9);
+    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(line10);
+    			if (detaching) detach_dev(t22);
+    			if (detaching) detach_dev(line11);
+    			if (detaching) detach_dev(t23);
+    			if (detaching) detach_dev(line12);
+    			if (detaching) detach_dev(t24);
+    			if (detaching) detach_dev(line13);
+    			if (detaching) detach_dev(t25);
+    			if (detaching) detach_dev(line14);
+    			if (detaching) detach_dev(t26);
+    			if (detaching) detach_dev(line15);
+    			if (detaching) detach_dev(t27);
+    			if (detaching) detach_dev(line16);
+    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(line17);
+    			if (detaching) detach_dev(t29);
+    			if (detaching) detach_dev(line18);
+    			if (detaching) detach_dev(t30);
+    			if (detaching) detach_dev(line19);
+    			if (detaching) detach_dev(t31);
+    			if (detaching) detach_dev(line20);
+    			if (detaching) detach_dev(t32);
+    			if (detaching) detach_dev(line21);
+    			if (detaching) detach_dev(t33);
+    			if (detaching) detach_dev(line22);
+    			if (detaching) detach_dev(t34);
+    			if (detaching) detach_dev(line23);
+    			if (detaching) detach_dev(t35);
+    			if (detaching) detach_dev(path1);
+    			if (detaching) detach_dev(t36);
+    			if (detaching) detach_dev(line24);
+    			if (detaching) detach_dev(t37);
+    			if (detaching) detach_dev(line25);
+    			if (detaching) detach_dev(t38);
+    			if (detaching) detach_dev(path2);
+    			if (detaching) detach_dev(t39);
+    			if (detaching) detach_dev(line26);
+    			if (detaching) detach_dev(t40);
+    			if (detaching) detach_dev(line27);
+    			if (detaching) detach_dev(t41);
+    			if (detaching) detach_dev(line28);
+    			if (detaching) detach_dev(t42);
+    			if (detaching) detach_dev(line29);
+    			if (detaching) detach_dev(t43);
+    			if (detaching) detach_dev(line30);
+    			if (detaching) detach_dev(t44);
+    			if (detaching) detach_dev(line31);
+    			if (detaching) detach_dev(t45);
+    			if (detaching) detach_dev(line32);
+    			if (detaching) detach_dev(t46);
+    			if (detaching) detach_dev(line33);
+    			if (detaching) detach_dev(t47);
+    			if (detaching) detach_dev(line34);
+    			if (detaching) detach_dev(t48);
+    			if (detaching) detach_dev(line35);
+    			if (detaching) detach_dev(t49);
+    			if (detaching) detach_dev(line36);
+    			if (detaching) detach_dev(t50);
+    			if (detaching) detach_dev(line37);
+    			if (detaching) detach_dev(t51);
+    			if (detaching) detach_dev(line38);
+    			if (detaching) detach_dev(t52);
+    			if (detaching) detach_dev(line39);
+    			if (detaching) detach_dev(t53);
+    			if (detaching) detach_dev(line40);
+    			if (detaching) detach_dev(t54);
+    			if (detaching) detach_dev(line41);
+    			if (detaching) detach_dev(t55);
+    			if (detaching) detach_dev(line42);
+    			if (detaching) detach_dev(t56);
+    			if (detaching) detach_dev(line43);
+    			if (detaching) detach_dev(t57);
+    			if (detaching) detach_dev(line44);
+    			if (detaching) detach_dev(t58);
+    			if (detaching) detach_dev(line45);
+    			if (detaching) detach_dev(t59);
+    			if (detaching) detach_dev(line46);
+    			if (detaching) detach_dev(t60);
+    			if (detaching) detach_dev(line47);
+    			if (detaching) detach_dev(t61);
+    			if (detaching) detach_dev(line48);
+    			if (detaching) detach_dev(t62);
+    			if (detaching) detach_dev(line49);
+    			if (detaching) detach_dev(t63);
+    			if (detaching) detach_dev(line50);
+    			if (detaching) detach_dev(t64);
+    			if (detaching) detach_dev(line51);
+    			if (detaching) detach_dev(t65);
+    			if (detaching) detach_dev(line52);
+    			if (detaching) detach_dev(t66);
+    			if (detaching) detach_dev(line53);
+    			if (detaching) detach_dev(t67);
+    			if (detaching) detach_dev(line54);
+    			if (detaching) detach_dev(t68);
+    			if (detaching) detach_dev(line55);
+    			if (detaching) detach_dev(t69);
+    			if (detaching) detach_dev(line56);
+    			if (detaching) detach_dev(t70);
+    			if (detaching) detach_dev(line57);
+    			if (detaching) detach_dev(t71);
+    			if (detaching) detach_dev(line58);
+    			if (detaching) detach_dev(t72);
+    			if (detaching) detach_dev(line59);
+    			if (detaching) detach_dev(t73);
+    			if (detaching) detach_dev(line60);
+    			if (detaching) detach_dev(t74);
+    			if (detaching) detach_dev(line61);
+    			if (detaching) detach_dev(t75);
+    			if (detaching) detach_dev(line62);
+    			if (detaching) detach_dev(t76);
+    			if (detaching) detach_dev(line63);
+    			if (detaching) detach_dev(t77);
+    			if (detaching) detach_dev(line64);
+    			if (detaching) detach_dev(t78);
+    			if (detaching) detach_dev(line65);
+    			if (detaching) detach_dev(t79);
+    			if (detaching) detach_dev(line66);
+    			if (detaching) detach_dev(t80);
+    			if (detaching) detach_dev(line67);
+    			if (detaching) detach_dev(t81);
+    			if (detaching) detach_dev(line68);
+    			if (detaching) detach_dev(t82);
+    			if (detaching) detach_dev(line69);
+    			if (detaching) detach_dev(t83);
+    			if (detaching) detach_dev(line70);
+    			if (detaching) detach_dev(t84);
+    			if (detaching) detach_dev(line71);
+    			if (detaching) detach_dev(t85);
+    			if (detaching) detach_dev(line72);
+    			if (detaching) detach_dev(t86);
+    			if (detaching) detach_dev(line73);
+    			if (detaching) detach_dev(t87);
+    			if (detaching) detach_dev(line74);
+    			if (detaching) detach_dev(t88);
+    			if (detaching) detach_dev(line75);
+    			if (detaching) detach_dev(t89);
+    			if (detaching) detach_dev(g);
+    			if (detaching) detach_dev(t90);
+    			if (detaching) detach_dev(path8);
+    			if (detaching) detach_dev(t91);
+    			if (detaching) detach_dev(path9);
+    			if (detaching) detach_dev(t92);
+    			if (detaching) detach_dev(rect11);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance($$self, $$props, $$invalidate) {
+    	let { t } = $$props;
+    	const writable_props = ["t"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Extra> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$set = $$props => {
+    		if ("t" in $$props) $$invalidate(0, t = $$props.t);
+    	};
+
+    	$$self.$capture_state = () => {
+    		return { t };
+    	};
+
+    	$$self.$inject_state = $$props => {
+    		if ("t" in $$props) $$invalidate(0, t = $$props.t);
+    	};
+
+    	return [t];
+    }
+
+    class Extra extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance, create_fragment, safe_not_equal, { t: 0 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Extra",
+    			options,
+    			id: create_fragment.name
+    		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || ({});
+
+    		if (/*t*/ ctx[0] === undefined && !("t" in props)) {
+    			console.warn("<Extra> was created without expected prop 't'");
+    		}
+    	}
+
+    	get t() {
+    		throw new Error("<Extra>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set t(value) {
+    		throw new Error("<Extra>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src/components/layer.svelte generated by Svelte v3.16.7 */
+    const file$1 = "src/components/layer.svelte";
+
+    // (81:0) {#if depth === 0}
+    function create_if_block(ctx) {
+    	let current;
+
+    	const extra = new Extra({
+    			props: { t: /*t*/ ctx[2] },
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(extra.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(extra, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const extra_changes = {};
+    			if (dirty & /*t*/ 4) extra_changes.t = /*t*/ ctx[2];
+    			extra.$set(extra_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(extra.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(extra.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(extra, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(81:0) {#if depth === 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$1(ctx) {
+    	let t_1;
+    	let path;
+    	let path_class_value;
+    	let path_d_value;
+    	let current;
+    	let if_block = /*depth*/ ctx[0] === 0 && create_if_block(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			t_1 = space();
+    			path = svg_element("path");
+    			attr_dev(path, "class", path_class_value = "" + (null_to_empty(`layer-${/*depth*/ ctx[0]}`) + " svelte-1qbsmg6"));
+    			attr_dev(path, "style", /*style*/ ctx[1]);
+    			attr_dev(path, "d", path_d_value = /*data*/ ctx[3][/*depth*/ ctx[0]].split(/ |\n/).join("") || "M0,0");
+    			add_location(path, file$1, 84, 0, 6681);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, t_1, anchor);
+    			insert_dev(target, path, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (/*depth*/ ctx[0] === 0) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    					transition_in(if_block, 1);
+    				} else {
+    					if_block = create_if_block(ctx);
+    					if_block.c();
+    					transition_in(if_block, 1);
+    					if_block.m(t_1.parentNode, t_1);
+    				}
+    			} else if (if_block) {
+    				group_outros();
+
+    				transition_out(if_block, 1, 1, () => {
+    					if_block = null;
+    				});
+
+    				check_outros();
+    			}
+
+    			if (!current || dirty & /*depth*/ 1 && path_class_value !== (path_class_value = "" + (null_to_empty(`layer-${/*depth*/ ctx[0]}`) + " svelte-1qbsmg6"))) {
+    				attr_dev(path, "class", path_class_value);
+    			}
+
+    			if (!current || dirty & /*style*/ 2) {
+    				attr_dev(path, "style", /*style*/ ctx[1]);
+    			}
+
+    			if (!current || dirty & /*depth*/ 1 && path_d_value !== (path_d_value = /*data*/ ctx[3][/*depth*/ ctx[0]].split(/ |\n/).join("") || "M0,0")) {
+    				attr_dev(path, "d", path_d_value);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(t_1);
+    			if (detaching) detach_dev(path);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$1.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$1($$self, $$props, $$invalidate) {
+    	let { depth = 1 } = $$props;
+    	let { style = "color: black" } = $$props;
+    	let { t = 0 } = $$props;
+
+    	const data = [
+    		`M2538.96,2479c-846.33-0.19-1692.67-0.19-2539,0v-440h205v140h75v-17h96v-10h59v10h32v17h17v69
+		h70v-80h16v-32h97v-97h27v91h43v38h48v-64h43v-54h22v54h70v75h48v-38h64v-27h113v27h44v204h54v-124h48v-32h75v32h32v108.58
+		l1.06-0.5l62.94-37.43V2232h82v-225h16v-18.77c19,0.34,38.92,1.94,58.49,2.28c0.14,5.08,0.06,11.49,0.2,16.49h21.3v64h209v145h28
+		v32h49v32h37v-64h43v-65.22v6.22h91v27h248v-129h64v-32h27v32h64v172h38.26l0.2-2.46c16.13-11.77,30.85-23.63,46.98-35.39
+		l49.55,32.54v79.25l0.05,1.56c8.96-0.25,17.94-0.51,26.9-0.76c-0.01-2.13,0-1.84-0.01-3.97c-0.06-12.09-0.11-22.76-0.16-33.76
+		c0.06,0,0.13,0,0.19,0c7.13,0,14.53-3,21.66-3.26c0.03-0.89-0.62-4.21,0.38-5.1v-62.27c-1-0.43-0.34-0.87-0.38-1.3
+		c41.71-0.58,83.29-1.16,125.01-1.74c0.06,12.78,0.07,28.22,0.16,41.06c0.09,12.02,0.12,22.61,0.24,38.61c2.97,0,5.93,0,8.9,0
+		c-0.01,0-0.02-4.92-0.03-6.06c0.01-46.03,0.02-93.38,0.03-139.41c-0.04-0.04-0.09-0.75-0.13-0.79c26.52-0.13,53.05-0.6,79.57-0.73
+		c0-0.96-0.01-2.09-0.01-3.05c-0.01-3.11,0.01-6.34,0.05-9.54c0.04-2.79,0.1-4.59,0.17-7.31c0.94-0.02,1.89,0.9,2.84,0.9h22.11
+		c0.93,0,1.86-0.89,2.79-0.83c-0.04,7.19-0.07,14.54-0.11,21.73c0.95-0.02,1.9,0.1,2.84,0.1h22.11c0.75,0,1.5-0.55,2.25-0.49
+		c0.11,10.79,0.19,21.31,0.25,32.21c0.05,10.88,0.08,21.55,0.07,32.33c0.99-0.06,1.97-0.2,2.96-0.26
+		c16.59,0.02,33.18,0.01,49.77,0.03c0.33-0.03,0.67-0.08,0.67-0.05c0,0.01-0.14,0.01-0.14,0.01c0,10.81,0,21.61,0,32.41
+		c6,0.01,4.23-5.18,4.98-0.18h27.64c0.87,0,1.74,0.23,2.61,0.29c-0.13,36-0.25,72.06-0.38,108.06c1.1,0.06,2.2,0.15,3.3,0.21
+		c19.61,0.08,39.22,0.16,58.83,0.24c-0.02-2.08-0.04-4.15-0.06-6.23c0.37-8.86,0.73-17.71,1.1-26.57
+		c5.02-0.04,10.03-0.09,15.05-0.13c-0.01-2.06-0.01-5.2-0.02-7.26c-0.04-21.02-0.02-41.79,0.07-62.7c2.65-0.03,5.3,0.1,7.95,0.1
+		h99.5c0.88,0,1.76-0.13,2.64-0.1c0.12-9.24,0.21-18.61,0.28-27.93c0.08-11.61,0.12-23.19,0.12-34.66
+		c5.4,0.08,10.79,0.14,16.19,0.22c0.04,20.87,0.08,41.73,0.11,62.61c0.92-0.16,1.84-0.33,2.77-0.5
+		c80.13-0.02,160.25-0.04,240.38-0.06c-0.02-6.22-0.05-12.46-0.09-18.72c-0.04-6.28-0.09-12.54-0.16-18.79
+		c1.03-0.02,2.06-0.04,3.09-0.06h38.7c0.72,0,1.43,0,2.15,0c0.23,17.97,0.45,35.94,0.68,53.91c0.9,0.02,1.8-0.01,2.7,0.01
+		c11.39,0.09,22.79,0.16,34.18,0.25c0.15-1.5,0.3-3,0.46-4.5c0.08-40.1,0.17-80.21,0.25-120.31c1.27-0.03,2.54-0.06,3.81-0.09
+		c19.34,0.08,38.67,0.15,58.01,0.23c0.01-1.24,0.02-2.48,0.03-3.72c-0.08-13.27-0.13-26.59-0.16-39.95
+		c-0.03-12.64-0.03-24.23-0.01-36.79c0.98-0.02,1.96,0.95,2.94,0.95h82.92c0.78,0,1.56-0.87,2.33-0.81
+		c0.03,12.56,0.08,24.65,0.16,37.27c0.07,12.37,0.16,24.45,0.27,36.75c0.32-0.02,0.64-0.16,0.95-0.17c5.15-0.01,10.3-0.4,15.45-0.41
+		c-0.2,14.74-0.15,29.66,0.18,44.82c0.04,1.88,0.09,3.74,0.14,5.62c13.77-0.15,27.55-0.2,41.32-0.35
+		c0.29,17.69,0.59,35.39,0.88,53.08c7.96,0.05,15.93,0.1,23.89,0.16c-0.02,16.58-0.04,33.16-0.07,49.74
+		c0.98-0.02,1.96-0.06,2.94-0.08c7.85-0.07,15.83-0.09,23.93-0.01c8.38,0.08,16.24,0.24,24.35,0.47c0.04-1.26-0.27-2.52-0.27-3.78
+		v-158.5c0-0.13-0.16-0.19-0.17-0.2c0,0-0.28,0.04-0.42,0.14c8.98,0.02,17.85,0.04,26.83,0.06c-0.02,52.05-0.09,104.11-0.11,156.16
+		c1.1,0.06,2.17,0.12,3.27,0.18c9.67,0.04,19.33,0.08,29,0.12c0.04-1.21,0.07-2.42,0.1-3.63c-0.06-24.11-0.13-48.22-0.2-72.33
+		c1.41-0.08,2.82-0.16,4.24-0.24c27.34-0.09,54.69-0.17,82.03-0.26c0.07-2.14,0.14-4.28,0.21-6.42c0.03-23.04,0.06-45.08,0.09-68.12
+		c2.04-0.09,4.08,0.72,6.12,0.72c10.11,0,20.21,0,30.32,0c0.03,0,0.06-3.34,0.09-4.51c-0.03-22.39-0.06-43.96-0.09-66.35
+		c0.95,0.01,1.9,0.86,2.85,0.86h82.92c1.7,0,2.55,0,2.55,0s-0.09,0-0.26,0c0.04,11,0.08,24.55,0.13,37.51
+		c0.05,12.4,0.1,24.14,0.16,36.52c-0.02,0.05-0.05-0.23-0.07-0.18c21.28-0.03,42.55-0.22,63.83-0.24l-1.34,0.62l23.12-24.52
+		l43.07,48.09c0.12,50.09,0.24,100.16,0.37,150.25c10.6,0.06,21.19,0.12,31.79,0.19c-0.01-47.4-0.03-94.81-0.04-142.21
+		c2.69,0.01,5.38,0.01,8.07,0.01c8.27,0.04,16.55,0.09,24.82,0.13c0.02-1.14,0.03-2.28,0.05-3.42c0.04-6.3,0.14-19.44,0.18-25.74
+		c0.05-7,0.32-20.41,0.38-27.42c30.32,0.09,60.03,0.18,91.12,0.27v0.86c-0.05,130-0.09,260.01-0.14,390.01
+    C3786.2,2479.39,3162.58,2479.14,2538.96,2479z`,
+    		`M972.96,1830h27v64h32v-136.33l-2.29-1.23l35.83-34.39l37.07,37.95h26.39v-85h76v118h27v101h27v38h48v-102
+		h-2.57l10.2-60.29l19.37,57.67V1873h27v29.44l2.12-0.11l23.88,5.47v24.2h22v-97h21v-48h32v-21h16v-102h77v91h32v102h21v-81h27
+		v-12.97l-0.83-2.26l39.66-39.49l31.17,31.02V1776h26v86h27v32h32v33h60.06h4.94v-70h33v-59h11v59h27v75h21v-193h16v-22h11v-16h27
+		v16h10v22h16v145h27v-49h38v-26h53v32h49v80h49v-43h48v-32h27v16h11v-152.59l1.33-2.44l46.3-46.29l43.37,43.36v166.22v1.29
+		l32.32,33.44h79.68v-188h28v-10h27v-43h21v37h27v16h27v76h32v-49h16v38h27v16h27v75h16v32h114v-27h75v22h48v-32h43v-27h48v27h27v64
+		h11v-38h59v38h22v-123h38v-156h16v-16h26v-86h11v86h11v21h21v188h65v97h59v-102h32v-29.71l0.69,0.41l32.36-32.1l31.95,31.69V1846
+		h38v91h16v-48h37v48h38v-96h43v-86h75v91h16v16h37v54h17v182h43v-139h33v-59h10v-59h11v59h11v112h70v-120.28l-0.89,0.44
+		l26.89-27.25V1755h75v91h22.2l-1.35-3.47l48.17-48.47l44.99,44.03v112.6l0.36-0.18l37.64-37.35V1793h91v686h-4410v-692h32v43h11v38
+		h37v75h17v-126.35l-0.41,0.6l40.86-39.37l34.88,36.13h32.67v-80h75v96h21v161h70v-118h32v59h38.2h-6.2v129h43v-169.28l-1.06,1.36
+    l50.06-49.62V1814h27v-91h75v64h32v129h43v-48h43v48h32v-22h17v22h70v-193h75v37h27v70`,
+    		`M1307.51,1112.15c9.91,71.28,19.81,142.57,29.72,213.85h33.72v97h16v48h27v134h135v70h48v37
+		h43v-456h43v-75h75V972h11v209h59v67.3v7.7h44v124h118v43h27v316h43v-188h93.72l-0.49-2.98c-7.38-256.12-6.36-525.19,5.62-804.85
+		c4.25-99.27,9.76-197.21,16.38-293.15l-0.69-0.48l159.46-43.05V495h45.31l2.5,0.17l26.23-75.49
+		c26.09,232.88,44.56,486.02,50.59,754.92c4.03,179.73,2.16,349.41-4.13,516.41h77.49v-113h23v-86h86v70h37v64h32v172h54v-123h59
+		v-70h27v70h49v-180.06l1.65,1.87l80.74-80.87l89.61,89.72V1739h0.32l62.57-317.99l38.11,229.42V1471h50v-65h27v65h42v246h81v-150
+		h80v-257h98.26l-2.76-3.75l23.51,22.47V1262h43v69h16v386h32v-152.35l-0.58-1.44l72.07-72.22l73.51,73.66V1739h16v-172h162v172h64
+		v-509h70v-108h32v108h38v37h48v483h173v729h-4410v-984.06l2.89-2.68l35.11,34.85V1739h21v-86h91v91h60v-161h182v129h11v59h38
+		v-120.57V1664h108v-123h37v-118h81v64h123v300h49v-544.06l-1.29,2.51l72.03-71.29l80.26,79.51V1884h53v-354h22v-38h64v43h73.99
+    l-8.99-7.89V1460h27v-37h27v-97h30.19c-0.16,0-0.33,0-0.49,0C1287.61,1254.72,1297.56,1183.43,1307.51,1112.15z`
+    	];
+
+    	const writable_props = ["depth", "style", "t"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Layer> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$set = $$props => {
+    		if ("depth" in $$props) $$invalidate(0, depth = $$props.depth);
+    		if ("style" in $$props) $$invalidate(1, style = $$props.style);
+    		if ("t" in $$props) $$invalidate(2, t = $$props.t);
+    	};
+
+    	$$self.$capture_state = () => {
+    		return { depth, style, t };
+    	};
+
+    	$$self.$inject_state = $$props => {
+    		if ("depth" in $$props) $$invalidate(0, depth = $$props.depth);
+    		if ("style" in $$props) $$invalidate(1, style = $$props.style);
+    		if ("t" in $$props) $$invalidate(2, t = $$props.t);
+    	};
+
+    	return [depth, style, t, data];
+    }
+
+    class Layer extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { depth: 0, style: 1, t: 2 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Layer",
+    			options,
+    			id: create_fragment$1.name
+    		});
+    	}
+
+    	get depth() {
+    		throw new Error("<Layer>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set depth(value) {
+    		throw new Error("<Layer>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get style() {
+    		throw new Error("<Layer>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set style(value) {
+    		throw new Error("<Layer>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get t() {
+    		throw new Error("<Layer>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set t(value) {
+    		throw new Error("<Layer>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src/app.svelte generated by Svelte v3.16.7 */
+    const file$2 = "src/app.svelte";
+
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[10] = list[i];
+    	return child_ctx;
+    }
+
+    // (33:2) {#each layers as layer}
+    function create_each_block(ctx) {
+    	let current;
+
+    	const layer = new Layer({
+    			props: {
+    				t: (/*y*/ ctx[1] - /*offsetTop*/ ctx[0] + /*wh*/ ctx[3] - /*h*/ ctx[2]) / /*wh*/ ctx[3],
+    				depth: /*layer*/ ctx[10],
+    				style: "transform: translate(0," + (/*y*/ ctx[1] - /*offsetTop*/ ctx[0] + /*wh*/ ctx[3] - /*h*/ ctx[2]) / /*wh*/ ctx[3] * /*layer*/ ctx[10] * 500 + "px);"
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(layer.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(layer, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const layer_changes = {};
+    			if (dirty & /*y, offsetTop, wh, h*/ 15) layer_changes.t = (/*y*/ ctx[1] - /*offsetTop*/ ctx[0] + /*wh*/ ctx[3] - /*h*/ ctx[2]) / /*wh*/ ctx[3];
+    			if (dirty & /*y, offsetTop, wh, h*/ 15) layer_changes.style = "transform: translate(0," + (/*y*/ ctx[1] - /*offsetTop*/ ctx[0] + /*wh*/ ctx[3] - /*h*/ ctx[2]) / /*wh*/ ctx[3] * /*layer*/ ctx[10] * 500 + "px);";
+    			layer.$set(layer_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(layer.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(layer.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(layer, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(33:2) {#each layers as layer}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$2(ctx) {
+    	let scrolling = false;
+
+    	let clear_scrolling = () => {
+    		scrolling = false;
+    	};
+
+    	let scrolling_timeout;
+    	let div;
+    	let svg;
+    	let div_resize_listener;
+    	let current;
+    	let dispose;
+    	add_render_callback(/*onwindowscroll*/ ctx[6]);
+    	add_render_callback(/*onwindowresize*/ ctx[7]);
+    	let each_value = /*layers*/ ctx[5];
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			svg = svg_element("svg");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(svg, "id", "background");
+    			attr_dev(svg, "viewBox", "0 0 4409.92 2479.24");
+    			attr_dev(svg, "class", "svelte-1f9h30l");
+    			add_location(svg, file$2, 31, 1, 633);
+    			add_render_callback(() => /*div_elementresize_handler*/ ctx[8].call(div));
+    			add_location(div, file$2, 30, 0, 582);
+
+    			dispose = [
+    				listen_dev(window, "scroll", () => {
+    					scrolling = true;
+    					clearTimeout(scrolling_timeout);
+    					scrolling_timeout = setTimeout(clear_scrolling, 100);
+    					/*onwindowscroll*/ ctx[6]();
+    				}),
+    				listen_dev(window, "resize", /*onwindowresize*/ ctx[7])
+    			];
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, svg);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(svg, null);
+    			}
+
+    			div_resize_listener = add_resize_listener(div, /*div_elementresize_handler*/ ctx[8].bind(div));
+    			/*div_binding*/ ctx[9](div);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*y*/ 2 && !scrolling) {
+    				scrolling = true;
+    				clearTimeout(scrolling_timeout);
+    				scrollTo(window.pageXOffset, /*y*/ ctx[1]);
+    				scrolling_timeout = setTimeout(clear_scrolling, 100);
+    			}
+
+    			if (dirty & /*y, offsetTop, wh, h, layers*/ 47) {
+    				each_value = /*layers*/ ctx[5];
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(svg, null);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_each(each_blocks, detaching);
+    			div_resize_listener.cancel();
+    			/*div_binding*/ ctx[9](null);
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$2.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$2($$self, $$props, $$invalidate) {
+    	const layers = [2, 1, 0];
+    	let offsetTop = 0;
+    	let y = 0;
+    	let h = 1;
+    	let wh = 1;
+    	let container;
+
+    	onMount(() => {
+    		$$invalidate(0, offsetTop = container.offsetTop);
+    		if (offsetTop === 1) $$invalidate(0, offsetTop = container.offsetParent.offsetTop);
+    	});
+
+    	function onwindowscroll() {
+    		$$invalidate(1, y = window.pageYOffset);
+    	}
+
+    	function onwindowresize() {
+    		$$invalidate(3, wh = window.innerHeight);
+    	}
+
+    	function div_elementresize_handler() {
+    		h = this.clientHeight;
+    		$$invalidate(2, h);
+    	}
+
+    	function div_binding($$value) {
+    		binding_callbacks[$$value ? "unshift" : "push"](() => {
+    			$$invalidate(4, container = $$value);
+    		});
+    	}
+
+    	$$self.$capture_state = () => {
+    		return {};
+    	};
+
+    	$$self.$inject_state = $$props => {
+    		if ("offsetTop" in $$props) $$invalidate(0, offsetTop = $$props.offsetTop);
+    		if ("y" in $$props) $$invalidate(1, y = $$props.y);
+    		if ("h" in $$props) $$invalidate(2, h = $$props.h);
+    		if ("wh" in $$props) $$invalidate(3, wh = $$props.wh);
+    		if ("container" in $$props) $$invalidate(4, container = $$props.container);
+    	};
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*container, offsetTop*/ 17) {
+    			 {
+    				if (container) {
+    					$$invalidate(0, offsetTop = container.offsetTop);
+    					if (offsetTop === 1) $$invalidate(0, offsetTop = container.offsetParent.offsetTop);
+    				}
+    			}
+    		}
+    	};
+
+    	return [
+    		offsetTop,
+    		y,
+    		h,
+    		wh,
+    		container,
+    		layers,
+    		onwindowscroll,
+    		onwindowresize,
+    		div_elementresize_handler,
+    		div_binding
+    	];
+    }
+
+    class App extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "App",
+    			options,
+    			id: create_fragment$2.name
+    		});
+    	}
+    }
+
+    const app = new App({
+      target: document.querySelector("#parallax-city"),
+      props: {}
+    });
+
+    return app;
+
+}());
 //# sourceMappingURL=bundle.js.map
